@@ -1,0 +1,5 @@
+Product: sgs
+Price: 45.0
+Quantity: 34.0
+Total: 1530.0
+Bill: 1530.0

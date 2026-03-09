@@ -1,11 +1,50 @@
-REPORTS
-For rent: 1
-For sale: 0
-VCD Total: 0
-DVD Total: 1
-Tape Total: 0
-Horror Movies: 0
-Scifi Movies: 1
-Drama Movies: 0
-Comedy Movies: 0
-Catoons: 0
+It
+2017
+Horror/Mystery
+2.15
+Andres Muschietti
+Avatar: The Way of Water
+2022
+Sci-fi/Action/Fantasy
+3.12
+James Cameron
+Ballerina
+2023
+Action/Thriller
+1.33
+Lee Chung-hyeon
+Barbie
+2023
+Comedy/Fantasy
+1.54
+Greta Gerwig
+Death Whisperer
+2023
+Horror/Thriller
+2.1
+Taweewat Wantha
+10 Things I Hate About You
+1999
+Romance/Comedy
+1.37
+Gil Junger
+The Lucky One
+2012
+Romance/War
+1.41
+Scott Hicks
+The Cat Returns
+2002
+Adventure/Comedy
+1.14
+Hiroyhuki Morita
+Hacksaw Ridge
+2017
+War/Drama
+2.19
+Mel Gibson
+Black Panther
+2018
+Action/Sci-fi
+2.15
+Ryan Coogler

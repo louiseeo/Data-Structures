@@ -1,0 +1,11 @@
+REPORTS
+For rent: 1
+For sale: 0
+VCD Total: 0
+DVD Total: 1
+Tape Total: 0
+Horror Movies: 0
+Scifi Movies: 1
+Drama Movies: 0
+Comedy Movies: 0
+Catoons: 0

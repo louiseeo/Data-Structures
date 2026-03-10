@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MovieRegistrationMenu {
+public class add {
     // Make this two accesible for the whole program
     static ArrayList<String> movie = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
@@ -25,6 +25,7 @@ public class MovieRegistrationMenu {
             switch (choice) {
                 case 1:
                     // Add function
+                    addMovie();
                     break;
                 case 2:
                     // Search
@@ -55,6 +56,24 @@ public class MovieRegistrationMenu {
     }
 
     // Method 1: Adding
+    public static void addMovie(){
+        System.out.print("Enter movie title: ");
+        String newTitle = sc.next();
+        System.out.print("Release date(year): ");
+        String newDate = sc.next();
+        System.out.print("Genre: ");
+        String newGenre = sc.next();
+        System.out.print("Duration(hrs): ");
+        String newDuration = sc.next();
+        System.out.print("Director: ");
+        String newDirector = sc.next();
+
+        System.out.println("New movie added successfully!");
+
+
+
+        
+    }
     // Method 2: Search
     // Method 3: Edit
     // Method 4: Delete
@@ -63,8 +82,6 @@ public class MovieRegistrationMenu {
     // Method 6: List/Display elements in the array
     public static void displayList() {
         String filename = "movies.txt";
-
-        
 
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -86,4 +103,6 @@ public class MovieRegistrationMenu {
             System.err.println("Error reading the file.");
         }
     }
+
+
 }

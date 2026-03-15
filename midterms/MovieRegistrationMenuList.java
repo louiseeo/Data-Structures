@@ -66,9 +66,13 @@ public class MovieRegistrationMenuList {
         String filename = "movies.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            String line;
+            String title, year, genre, duration, director;
 
-            while ((line = br.readLine()) != null) {
+            while ((title = br.readLine()) != null &&
+                    (year = br.readLine()) != null &&
+                    (genre = br.readLine()) != null &&
+                    (duration = br.readLine()) != null &&
+                    (director = br.readLine()) != null) {
                 movie.add(line);
             }
 
@@ -88,7 +92,6 @@ public class MovieRegistrationMenuList {
                             System.out.println();
                         }
                     System.out.println(movie);
-                    System.out.println();
                     count++;
                 }
             }

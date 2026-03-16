@@ -3,12 +3,14 @@ import java.util.*;
 
 public class MovieRegistrationMenuList {
     // Make this two accesible for the whole program
+    static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
-    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int choice;
 
+        loadMovies(); // call the method to load movies to the array list
         do {
             System.out.println("""
                     \nWelcome to Movie Registration Menu!
@@ -21,7 +23,7 @@ public class MovieRegistrationMenuList {
                     [0] Exit
                     """);
             System.out.print("Choice: ");
-            choice = sc.nextInt();
+            choice = sc.nextInt(); sc.nextLine();
 
             switch (choice) {
                 case 1:
@@ -63,8 +65,37 @@ public class MovieRegistrationMenuList {
 
     // Method 6: List/Display elements in the array
     public static void displayList() {
-        String filename = "movies.txt";
+        if (movie.isEmpty()) {
+            System.out.println("No movies found in the list.");
+            return;
+        }
 
+        System.out.println("---------- MOVIE LIST ----------");
+        int movieCount = 1;
+
+        for (int i = 0; i < movie.size(); i++){
+            if (i % 5 == 0){
+                System.out.print(movieCount + ". Title: ");
+                movieCount++;
+            } else if (i % 5 == 1){
+                System.out.print("Year: ");
+            } else if (i % 5 == 2){
+                System.out.print("Genre: ");
+            } else if (i % 5 == 3){
+                System.out.print("Duration(hrs): ");
+            } else if (i % 5 == 4){
+                System.out.print("Director: ");
+            }
+
+            System.out.println(movie.get(i));
+    
+        }
+
+    }
+
+    // Helper Methods
+    // Load data for easy access for the whole menu
+    public static void loadMovies() {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String title, year, genre, duration, director;
 
@@ -73,31 +104,17 @@ public class MovieRegistrationMenuList {
                     (genre = br.readLine()) != null &&
                     (duration = br.readLine()) != null &&
                     (director = br.readLine()) != null) {
-                movie.add(line);
-            }
 
-            int count = 0;
-            int m = 0;
-            if (movie.isEmpty()) {
-                System.out.println("No movies available."); // condition if there are no movies on the list
-            } else {
-                for (String movie : movie) {
-                    if (count % 5 == 0 ){
-                        System.out.print(m + ". Title: ");
-                        m++;
-                        
-                    }
-
-                    if (count % 5 == 0){
-                            System.out.println();
-                        }
-                    System.out.println(movie);
-                    count++;
-                }
+                movie.add(title);
+                movie.add(year);
+                movie.add(genre);
+                movie.add(duration);
+                movie.add(director);
             }
 
         } catch (IOException e) {
-            System.err.println("Error reading the file.");
+            System.out.println("Error reading the file: " + e.getMessage());
         }
     }
+
 }

@@ -1,16 +1,17 @@
 import java.io.*;
 import java.util.*;
 
-public class MovieRegistrationMenuList {
-    // Make this two accesible for the whole program
+public class MovieRegistrationMenu_Add {
+    // Make these fields accesible for the whole program
     static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int choice;
 
         loadMovies(); // call the method to load movies to the array list
+
         do {
             System.out.println("""
                     \nWelcome to Movie Registration Menu!
@@ -23,11 +24,13 @@ public class MovieRegistrationMenuList {
                     [0] Exit
                     """);
             System.out.print("Choice: ");
-            choice = sc.nextInt(); sc.nextLine();
+            choice = sc.nextInt();
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
                     // Add function
+                    addMovies();
                     break;
                 case 2:
                     // Search
@@ -44,9 +47,9 @@ public class MovieRegistrationMenuList {
                 case 6:
                     // List / Display items
                     displayList();
-
                     break;
                 case 0:
+                    System.out.println("Thank you for using the Movie Registration System!");
                     System.out.println("Exiting program...");
                     break;
                 default:
@@ -57,7 +60,28 @@ public class MovieRegistrationMenuList {
         sc.close();
     }
 
-    // Method 1: Adding
+    // Method 1: Adding movies to the txt
+    public static void addMovies() {
+        System.out.print("Enter title: ");
+        String title = sc.nextLine();
+        movie.add(title);
+        System.out.print("Enter year released: ");
+        String year = sc.nextLine();
+        movie.add(year);
+        System.out.print("Enter genre: ");
+        String genre = sc.nextLine();
+        movie.add(genre);
+        System.out.print("Enter duration(e.g., 2h 30m): ");
+        String duration = sc.nextLine();
+        movie.add(duration);
+        System.out.print("Enter name of director: ");
+        String director = sc.nextLine();
+        movie.add(director);
+
+        saveMovies();
+        System.out.println("\nMovie successfully added!\n");
+    }
+
     // Method 2: Search
     // Method 3: Edit
     // Method 4: Delete
@@ -73,24 +97,24 @@ public class MovieRegistrationMenuList {
         System.out.println("---------- MOVIE LIST ----------");
         int movieCount = 1;
 
-        for (int i = 0; i < movie.size(); i++){
-            if (i % 5 == 0){
+        for (int i = 0; i < movie.size(); i++) {
+            if (i % 5 == 0) {
                 System.out.print(movieCount + ". Title: ");
                 movieCount++;
-            } else if (i % 5 == 1){
-                System.out.print("Year: ");
-            } else if (i % 5 == 2){
-                System.out.print("Genre: ");
-            } else if (i % 5 == 3){
-                System.out.print("Duration(hrs): ");
-            } else if (i % 5 == 4){
-                System.out.print("Director: ");
+            } else if (i % 5 == 1) {
+                System.out.print("   Year: ");
+            } else if (i % 5 == 2) {
+                System.out.print("   Genre: ");
+            } else if (i % 5 == 3) {
+                System.out.print("   Duration(hrs): ");
+            } else if (i % 5 == 4) {
+                System.out.print("   Director: ");
             }
-
-            System.out.println(movie.get(i));
-    
+            System.out.println(movie.get(i)); // print the infos
+            if (i % 5 == 4) {
+                System.out.println(); // add space to move to next movie
+            }
         }
-
     }
 
     // Helper Methods
@@ -105,15 +129,27 @@ public class MovieRegistrationMenuList {
                     (duration = br.readLine()) != null &&
                     (director = br.readLine()) != null) {
 
-                movie.add(title);
-                movie.add(year);
-                movie.add(genre);
-                movie.add(duration);
-                movie.add(director);
+                movie.add(title.trim());
+                movie.add(year.trim());
+                movie.add(genre.trim());
+                movie.add(duration.trim());
+                movie.add(director.trim());
             }
 
         } catch (IOException e) {
             System.out.println("Error reading the file: " + e.getMessage());
+        }
+    }
+
+    // Save file for the whole menu
+    public static void saveMovies() {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
+            for (String data : movie) {
+                bw.write(data);
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error saving movies: " + e.getMessage());
         }
     }
 

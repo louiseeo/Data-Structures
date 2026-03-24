@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MovieRegistrationMenu_Edit {
+public class MovieRegistrationMenu_Delete {
     // Make these fields accessible for the whole program
     static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
@@ -47,6 +47,7 @@ public class MovieRegistrationMenu_Edit {
                     break;
                 case 4:
                     // Delete
+                    deleteMovie();
                     break;
                 case 5:
                     // Sort
@@ -118,59 +119,92 @@ public class MovieRegistrationMenu_Edit {
         System.out.println("Duration: " + movie.get(start + 3));
         System.out.println("Director: " + movie.get(start + 4));
 
-        int choice = 0;
+        int choice;
 
-        System.out.print("Do you want to edit this movie? (y/n): ");
-        String ans = sc.nextLine();
+        while (true) {
+            System.out.print("Do you want to edit this movie? (y/n): ");
+            String ans = sc.nextLine();
 
-        if (!ans.equalsIgnoreCase("y")) {
-            return;
-        }
+            if (!ans.equalsIgnoreCase("y")) {
+                return;
+            }
 
-        do {
-                System.out.println("""
-                        \nWhich part do you want to edit?
-                        [1] Title
-                        [2] Year
-                        [3] Genre
-                        [4] Duration
-                        [5] Director
-                        [0] Back to Menu
-                        """);
-                System.out.print("Choice: ");
+            System.out.println("""
+                    \nWhich part do you want to edit?
+                    [1] Title
+                    [2] Year
+                    [3] Genre
+                    [4] Duration
+                    [5] Director
+                    [0] Back to Menu
+                    """);
+            System.out.print("Choice: ");
 
-                if (!sc.hasNextInt()) {
-                    System.out.println("Invalid input! Try again.");
-                    sc.nextLine();
-                    continue;
-                }
-
-                choice = sc.nextInt();
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input! Try again.");
                 sc.nextLine();
+                continue;
+            }
 
-                if (choice == 0) {
-                    return;
-                }
+            choice = sc.nextInt();
+            sc.nextLine();
 
-                if (choice < 1 || choice > 5) {
-                    System.out.println("Invalid choice! Pick again.");
-                    continue;
-                }
+            if (choice == 0) {
+                return;
+            }
 
-                // ask for new value
-                System.out.print("Enter new value: ");
-                String newVal = sc.nextLine().trim();
+            if (choice < 1 || choice > 5) {
+                System.out.println("Invalid choice! Pick again.");
+                continue;
+            }
 
-                // update
-                movie.set(start + (choice - 1), newVal);
+            // ask for new value
+            System.out.print("Enter new value: ");
+            String newVal = sc.nextLine();
 
-                saveMovies();
+            // update
+            movie.set(start + (choice - 1), newVal);
 
-                System.out.println("\nMovie updated successfully!");
+            saveMovies();
 
-        } while (choice != 0);
+            System.out.println("\nMovie updated successfully!\n");
+            break; // back to menu
+        }
     }
     // Method 4: Delete
+    public static void deleteMovie() {
+        if (isMovieListEmpty())
+            return; // check if movie list is empty
+
+        int start = getMovieStartIndex();
+
+        // display movie details
+        System.out.println("\n----------Movie Details----------");
+        System.out.println("Title: " + movie.get(start));
+        System.out.println("Year : " + movie.get(start + 1));
+        System.out.println("Genre: " + movie.get(start + 2));
+        System.out.println("Duration: " + movie.get(start + 3));
+        System.out.println("Director: " + movie.get(start + 4));
+
+        while (true) {
+            System.out.print("Do you want to delete this movie? (y/n): ");
+            String ans = sc.nextLine();
+
+            if (!ans.equalsIgnoreCase("y")) {
+                return;
+            }
+
+            // delete all movie details
+            for (int i = 0; i < 5; i++) {
+                movie.remove(start);
+            }
+
+            saveMovies();
+            System.out.println("\nMovie deleted successfully!\n");
+            break;
+        }
+    }
+
     // Method 5: Sort
 
     // Method 6: List/Display elements in the array

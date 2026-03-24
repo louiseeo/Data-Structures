@@ -2,13 +2,13 @@ import java.io.*;
 import java.util.*;
 
 public class MovieRegistrationMenu_Search {
-    // Make these fields accesible for the whole program
+    // Make these fields accessible for the whole program
     static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int choice;
+        int choice = 0;
 
         loadMovies(); // call the method to load movies to the array list
 
@@ -24,6 +24,11 @@ public class MovieRegistrationMenu_Search {
                     [0] Exit
                     """);
             System.out.print("Choice: ");
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input! Enter another.");
+                sc.nextLine();
+                continue;
+            }
             choice = sc.nextInt();
             sc.nextLine();
 
@@ -38,7 +43,6 @@ public class MovieRegistrationMenu_Search {
                     break;
                 case 3:
                     // Edit
-                    editMovie();
                     break;
                 case 4:
                     // Delete
@@ -99,57 +103,6 @@ public class MovieRegistrationMenu_Search {
     }
 
     // Method 3: Edit
-    public static void editMovie() {
-        if (isMovieListEmpty())
-            return; // check if movie list is empty
-
-        int start = getMovieStartIndex();
-
-        // display movie details
-        System.out.println("\n----------Movie Details----------");
-        System.out.println("Title: " + movie.get(start));
-        System.out.println("Year : " + movie.get(start + 1));
-        System.out.println("Genre: " + movie.get(start + 2));
-        System.out.println("Duration: " + movie.get(start + 3));
-        System.out.println("Director: " + movie.get(start + 4));
-
-        System.out.println("""
-                \nWhich part do you want to edit?
-                [1] Title
-                [2] Year
-                [3] Genre
-                [4] Duration
-                [5] Director
-                """);
-        System.out.print("Choice: ");
-
-        if (!sc.hasNextInt()) {
-            System.out.println("Invalid input! Returning to menu.\n");
-            sc.nextLine();
-            return;
-        }
-
-        int choice = sc.nextInt();
-        sc.nextLine();
-
-        if (choice < 1 || choice > 5) {
-            System.out.println("Invalid choice! Returning to menu.\n");
-            return;
-        }
-
-        // ask for new value of chosen part
-        System.out.print("Enter new value: ");
-        String newVal = sc.nextLine();
-
-        // update the list
-        movie.set(start + (choice - 1), newVal);
-
-        saveMovies(); // save changes
-
-        System.out.println("\nMovie updated successfully!\n");
-
-    }
-
     // Method 4: Delete
     // Method 5: Sort
 
@@ -222,7 +175,7 @@ public class MovieRegistrationMenu_Search {
         while (true) {
             // ask user to enter a movie number to search
             System.out.println("Available movies: " + movie.size() / 5);
-            System.out.print("Enter movie number to search: ");
+            System.out.print("Enter movie number: ");
 
             // chech if user entered a valid input
             if (!sc.hasNextInt()) {

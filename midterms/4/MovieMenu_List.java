@@ -1,19 +1,20 @@
 import java.io.*;
 import java.util.*;
 
-public class MovieRegistrationMenu_List {
+public class MovieMenu_List {
     // Make these fields accesible for the whole program
     static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int choice;
+        int choice = 0;
 
         loadMovies(); // call the method to load movies to the array list
         do {
             System.out.println("""
-                    \nWelcome to Movie Registration Menu!
+                    \n===================================
+                    Welcome to Movie Registration Menu!
                     [1] Add
                     [2] Search
                     [3] Edit
@@ -23,6 +24,11 @@ public class MovieRegistrationMenu_List {
                     [0] Exit
                     """);
             System.out.print("Choice: ");
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input! Enter another.");
+                sc.nextLine();
+                continue;
+            }
             choice = sc.nextInt();
             sc.nextLine();
 
@@ -43,55 +49,52 @@ public class MovieRegistrationMenu_List {
                     // Sort
                     break;
                 case 6:
-                    // List / Display items
                     displayList();
                     break;
                 case 0:
                     System.out.println("Thank you for using the Movie Registration System!");
-                    System.out.println("Exiting program...");
+                    System.out.println("Movie menu is terminating...");
                     break;
                 default:
                     System.out.println("Invalid input! Enter a valid choice.");
             }
 
         } while (choice != 0);
-        sc.close();
     }
 
-    // Method 1: Adding
-    // Method 2: Search
-    // Method 3: Edit
-    // Method 4: Delete
-    // Method 5: Sort
-
-    // Method 6: List/Display elements in the array
+    /**
+     * Displays all movies in the list.
+     * Prints each movie’s details (title, year, genre, duration, director) in a
+     * structured format.
+     */
     public static void displayList() {
         if (movie.isEmpty()) {
             System.out.println("No movies found in the list.");
             return;
         }
 
-        System.out.println("\n---------- MOVIE LIST ----------");
-        int movieCount = 1;
+        System.out.println("============================================== MOVIE LIST ==============================================");
 
-        for (int i = 0; i < movie.size(); i++) {
-            if (i % 5 == 0) {
-                System.out.print(movieCount + ". Title: ");
-                movieCount++;
-            } else if (i % 5 == 1) {
-                System.out.print("   Year: ");
-            } else if (i % 5 == 2) {
-                System.out.print("   Genre: ");
-            } else if (i % 5 == 3) {
-                System.out.print("   Duration: ");
-            } else if (i % 5 == 4) {
-                System.out.print("   Director: ");
-            }
-            System.out.println(movie.get(i)); // print the infos
-            if (i % 5 == 4) {
-                System.out.println(); // add space to move to next movie
-            }
+        // Print table header with borders
+        System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
+        System.out.printf("| %-2s | %-28s | %-4s | %-23s | %-8s | %-20s |%n",
+                "#", "Title", "Year", "Genre", "Duration", "Director");
+        System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
+
+        int movieCount = 1;
+        for (int i = 0; i < movie.size(); i += 5) {
+            System.out.printf("| %-2d | %-28s | %-4s | %-23s | %-8s | %-20s |%n",
+                    movieCount,
+                    movie.get(i), // Title
+                    movie.get(i + 1), // Year
+                    movie.get(i + 2), // Genre
+                    movie.get(i + 3), // Duration
+                    movie.get(i + 4)); // Director
+            movieCount++;
         }
+
+        // Print bottom border
+        System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
     }
 
     // Helper Methods

@@ -1,0 +1,638 @@
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 1
+
+=========================
+Welcome to EFM Grocery!
+Input product name: Chippy
+Price: 10.0
+Quantity: 2.0
+Total: 20.0
+Another product Y/N? y
+
+=========================
+Welcome to EFM Grocery!
+Input product name: C2
+Price: 25.0
+Quantity: 1.0
+Total: 25.0
+Another product Y/N? n
+Bill: 45.0
+Payment: 50.0
+Change: 5.0
+Thank you for shopping!
+
+Another customer Y/N? n
+Grocery program is terminating...
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 2
+
+Registration
+1. DVD
+2. VCD
+3. Tape
+Choice: 1
+Type: DVD
+Input title: 
+
+1. Horror
+2. Scifi
+3. Drama
+4. Comedy
+5. Cartoons
+Category: 2
+Minutes: 120
+Setting: 
+
+1. Rental
+2. Sales
+Transaction: 1
+Price: 150
+Register another? (Y/N) n
+
+REPORTS
+For rent: 1
+For sale: 0
+VCD Total: 0
+DVD Total: 1
+Tape Total: 0
+Horror Movies: 0
+Scifi Movies: 1
+Drama Movies: 0
+Comedy Movies: 0
+Catoons: 0
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 3
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 1
+Enter title: Doomsday
+Enter year released: 2008
+Enter genre: Action/Sci-fi
+Enter duration(e.g., 2h 30m): 1h 48m
+Enter name of director: Neil Marshall
+
+Movie successfully added!
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 2
+Available movies: 14
+Enter movie number: 5
+
+---- Movie Found ----
+Title: Saving Face
+Year : 2004
+Genre: Romance/Comedy
+Duration: 1h 37m
+Director: Alice Wu
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 3
+Available movies: 14
+Enter movie number: 14
+
+----------Movie Details----------
+Title: Doomsday
+Year : 2008
+Genre: Action/Sci-fi
+Duration: 1h 48m
+Director: Neil Marshall
+Do you want to edit this movie? (y/n): y
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 1
+Enter new value: The Purge
+
+Movie updated successfully!
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 4
+Available movies: 14
+Enter movie number: 14
+
+----------Movie Details----------
+Title: The Purge
+Year : 2008
+Genre: Action/Sci-fi
+Duration: 1h 48m
+Director: Neil Marshall
+Do you want to delete this movie? (y/n): y
+
+Movie deleted successfully!
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 5
+Choose the order of sorting:
+[1] Ascending
+[2] Descending
+
+Choice: 1
+
+Movie sorted successfully!
+
+============================================== MOVIE LIST ==============================================
++----+------------------------------+------+-------------------------+----------+----------------------+
+| #  | Title                        | Year | Genre                   | Duration | Director             |
++----+------------------------------+------+-------------------------+----------+----------------------+
+| 1  | 10 Things I Hate About You   | 1999 | Romance/Comedy          | 1h 37m   | Gil Junger           |
+| 2  | Avatar: The Way of Water     | 2022 | Sci-fi/Action/Fantasy   | 3h 12m   | James Cameron        |
+| 3  | Ballerina                    | 2023 | Action/Thriller         | 1h 33m   | Lee Chung-hyeon      |
+| 4  | Barbie                       | 2023 | Comedy/Fantasy          | 1h 54m   | Greta Gerwig         |
+| 5  | Black Panther                | 2018 | Action/Sci-fi           | 2h 15m   | Ryan Coogler         |
+| 6  | Death Whisperer              | 2023 | Horror/Thriller         | 2h 1m    | Taweewat Wantha      |
+| 7  | Hacksaw Ridge                | 2017 | War/Drama               | 2h 19m   | Mel Gibson           |
+| 8  | Hotel Mumbai                 | 2018 | Thriller/Action         | 2h 3m    | Anthony Maras        |
+| 9  | Saving Face                  | 2004 | Romance/Comedy          | 1h 37m   | Alice Wu             |
+| 10 | Taken                        | 2008 | Action/Crime            | 1h 33m   | Pierre Morel         |
+| 11 | The Cat Returns              | 2002 | Adventure/Comedy        | 1h 14m   | Hiroyhuki Morita     |
+| 12 | The Maid                     | 2020 | Horror/Mystery          | 1h 42m   | Lee Thongkham        |
+| 13 | White Chicks                 | 2004 | Comedy/Crime            | 1h 49m   | Keenen Ivory Wayans  |
++----+------------------------------+------+-------------------------+----------+----------------------+
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 5
+Choose the order of sorting:
+[1] Ascending
+[2] Descending
+
+Choice: 2
+
+Movie sorted successfully!
+
+============================================== MOVIE LIST ==============================================
++----+------------------------------+------+-------------------------+----------+----------------------+
+| #  | Title                        | Year | Genre                   | Duration | Director             |
++----+------------------------------+------+-------------------------+----------+----------------------+
+| 1  | White Chicks                 | 2004 | Comedy/Crime            | 1h 49m   | Keenen Ivory Wayans  |
+| 2  | The Maid                     | 2020 | Horror/Mystery          | 1h 42m   | Lee Thongkham        |
+| 3  | The Cat Returns              | 2002 | Adventure/Comedy        | 1h 14m   | Hiroyhuki Morita     |
+| 4  | Taken                        | 2008 | Action/Crime            | 1h 33m   | Pierre Morel         |
+| 5  | Saving Face                  | 2004 | Romance/Comedy          | 1h 37m   | Alice Wu             |
+| 6  | Hotel Mumbai                 | 2018 | Thriller/Action         | 2h 3m    | Anthony Maras        |
+| 7  | Hacksaw Ridge                | 2017 | War/Drama               | 2h 19m   | Mel Gibson           |
+| 8  | Death Whisperer              | 2023 | Horror/Thriller         | 2h 1m    | Taweewat Wantha      |
+| 9  | Black Panther                | 2018 | Action/Sci-fi           | 2h 15m   | Ryan Coogler         |
+| 10 | Barbie                       | 2023 | Comedy/Fantasy          | 1h 54m   | Greta Gerwig         |
+| 11 | Ballerina                    | 2023 | Action/Thriller         | 1h 33m   | Lee Chung-hyeon      |
+| 12 | Avatar: The Way of Water     | 2022 | Sci-fi/Action/Fantasy   | 3h 12m   | James Cameron        |
+| 13 | 10 Things I Hate About You   | 1999 | Romance/Comedy          | 1h 37m   | Gil Junger           |
++----+------------------------------+------+-------------------------+----------+----------------------+
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 6
+============================================== MOVIE LIST ==============================================
++----+------------------------------+------+-------------------------+----------+----------------------+
+| #  | Title                        | Year | Genre                   | Duration | Director             |
++----+------------------------------+------+-------------------------+----------+----------------------+
+| 1  | White Chicks                 | 2004 | Comedy/Crime            | 1h 49m   | Keenen Ivory Wayans  |
+| 2  | The Maid                     | 2020 | Horror/Mystery          | 1h 42m   | Lee Thongkham        |
+| 3  | The Cat Returns              | 2002 | Adventure/Comedy        | 1h 14m   | Hiroyhuki Morita     |
+| 4  | Taken                        | 2008 | Action/Crime            | 1h 33m   | Pierre Morel         |
+| 5  | Saving Face                  | 2004 | Romance/Comedy          | 1h 37m   | Alice Wu             |
+| 6  | Hotel Mumbai                 | 2018 | Thriller/Action         | 2h 3m    | Anthony Maras        |
+| 7  | Hacksaw Ridge                | 2017 | War/Drama               | 2h 19m   | Mel Gibson           |
+| 8  | Death Whisperer              | 2023 | Horror/Thriller         | 2h 1m    | Taweewat Wantha      |
+| 9  | Black Panther                | 2018 | Action/Sci-fi           | 2h 15m   | Ryan Coogler         |
+| 10 | Barbie                       | 2023 | Comedy/Fantasy          | 1h 54m   | Greta Gerwig         |
+| 11 | Ballerina                    | 2023 | Action/Thriller         | 1h 33m   | Lee Chung-hyeon      |
+| 12 | Avatar: The Way of Water     | 2022 | Sci-fi/Action/Fantasy   | 3h 12m   | James Cameron        |
+| 13 | 10 Things I Hate About You   | 1999 | Romance/Comedy          | 1h 37m   | Gil Junger           |
++----+------------------------------+------+-------------------------+----------+----------------------+
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 0
+Thank you for using the Movie Registration System!
+Exiting program...
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 0
+Thank you for using EFM Enterprise Systems! Have a good day!
+Terminating program...
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 3
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 3
+Available movies: 13
+Enter movie number: 13
+
+----------Movie Details----------
+Title: 10 Things I Hate About You
+Year : 1999
+Genre: Romance/Comedy
+Duration: 1h 37m
+Director: Gil Junger
+Do you want to edit this movie? (y/n): y
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 1
+Enter new value: La La Land
+
+Movie updated successfully!
+Do you want to edit this movie? (y/n): y
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 3
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 3
+Available movies: 13
+Enter movie number: 13
+
+----------Movie Details----------
+Title: La La Land
+Year : 1999
+Genre: Romance/Comedy
+Duration: 1h 37m
+Director: Gil Junger
+Do you want to edit this movie? (y/n): y
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 1
+Enter new value: Lady Bird
+
+Movie updated successfully!
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 2
+Enter new value: 2017
+
+Movie updated successfully!
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 3
+Enter new value: Comedy/Drama
+
+Movie updated successfully!
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 4
+Enter new value: 1h 25m
+
+Movie updated successfully!
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 5
+Enter new value: Greta Gerwig
+
+Movie updated successfully!
+
+Which part do you want to edit?
+[1] Title
+[2] Year
+[3] Genre
+[4] Duration
+[5] Director
+[0] Back to Menu
+
+Choice: 0
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 0
+Thank you for using the Movie Registration System!
+Exiting program...
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 0
+Thank you for using EFM Enterprise Systems! Have a good day!
+Terminating program...
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 2
+
+Registration
+1. DVD
+2. VCD
+3. Tape
+Choice: 1
+Type: DVD
+Input title: Alice
+
+1. Horror
+2. Scifi
+3. Drama
+4. Comedy
+5. Cartoons
+Category: 1
+Minutes: 123
+Setting: New York
+
+1. Rental
+2. Sales
+Transaction: 1
+Price: 1232
+Register another? (Y/N) n
+
+REPORTS
+For rent: 1
+For sale: 0
+VCD Total: 0
+DVD Total: 1
+Tape Total: 0
+Horror Movies: 1
+Scifi Movies: 0
+Drama Movies: 0
+Comedy Movies: 0
+Catoons: 0
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 3
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 6
+============================================== MOVIE LIST ==============================================
++----+------------------------------+------+-------------------------+----------+----------------------+
+| #  | Title                        | Year | Genre                   | Duration | Director             |
++----+------------------------------+------+-------------------------+----------+----------------------+
+| 1  | White Chicks                 | 2004 | Comedy/Crime            | 1h 49m   | Keenen Ivory Wayans  |
+| 2  | The Maid                     | 2020 | Horror/Mystery          | 1h 42m   | Lee Thongkham        |
+| 3  | The Cat Returns              | 2002 | Adventure/Comedy        | 1h 14m   | Hiroyhuki Morita     |
+| 4  | Taken                        | 2008 | Action/Crime            | 1h 33m   | Pierre Morel         |
+| 5  | Saving Face                  | 2004 | Romance/Comedy          | 1h 37m   | Alice Wu             |
+| 6  | Hotel Mumbai                 | 2018 | Thriller/Action         | 2h 3m    | Anthony Maras        |
+| 7  | Hacksaw Ridge                | 2017 | War/Drama               | 2h 19m   | Mel Gibson           |
+| 8  | Death Whisperer              | 2023 | Horror/Thriller         | 2h 1m    | Taweewat Wantha      |
+| 9  | Black Panther                | 2018 | Action/Sci-fi           | 2h 15m   | Ryan Coogler         |
+| 10 | Barbie                       | 2023 | Comedy/Fantasy          | 1h 54m   | Greta Gerwig         |
+| 11 | Ballerina                    | 2023 | Action/Thriller         | 1h 33m   | Lee Chung-hyeon      |
+| 12 | Avatar: The Way of Water     | 2022 | Sci-fi/Action/Fantasy   | 3h 12m   | James Cameron        |
+| 13 | Lady Bird                    | 2017 | Comedy/Drama            | 1h 25m   | Greta Gerwig         |
++----+------------------------------+------+-------------------------+----------+----------------------+
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 0
+Thank you for using the Movie Registration System!
+Exiting program...
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+0. Exit
+Choice: 0
+Thank you for using EFM Enterprise Systems! Have a good day!
+Terminating program...

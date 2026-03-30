@@ -12,44 +12,50 @@ public class Grocery {
         do {
             dBill = 0;
             do {
-                System.out.println("\n=========================");
-                System.out.println("Welcome to EFM Grocery!");
+                FileLogger.log("\n=========================");
+                FileLogger.log("Welcome to EFM Grocery!");
                 System.out.print("Input product name: ");
                 strProdName = sc.nextLine();
+                FileLogger.logAnswer("Input product name: " + strProdName);
                 System.out.print("Price: ");
                 dPrice = sc.nextDouble();
+                FileLogger.logAnswer("Price: " + dPrice);
                 System.out.print("Quantity: ");
                 dQty = sc.nextDouble();
+                FileLogger.logAnswer("Quantity: " + dQty);
                 sc.nextLine(); // consume newline
 
                 dTotal = dQty * dPrice;
-                System.out.println("Total: " + dTotal);
+                FileLogger.log("Total: " + dTotal);
                 dBill += dTotal;
 
                 System.out.print("Another product Y/N? ");
                 strAnotherP = sc.nextLine();
+                FileLogger.logAnswer("Another product Y/N? " + strAnotherP);
                 cAnotherP = strAnotherP.charAt(0);
             } while (cAnotherP == 'Y' || cAnotherP == 'y');
 
-            System.out.println("Bill: " + dBill);
+            FileLogger.log("Bill: " + dBill);
             System.out.print("Payment: ");
             dPay = sc.nextDouble();
+            FileLogger.logAnswer("Payment: " + dPay);
             sc.nextLine();
 
             if (dPay >= dBill) {
                 dChange = dPay - dBill;
-                System.out.println("Change: " + dChange);
-                System.out.println("Thank you for shopping!");
+                FileLogger.log("Change: " + dChange);
+                FileLogger.log("Thank you for shopping!");
             } else {
-                System.out.println("Money is not enough!");
+                FileLogger.log("Money is not enough!");
             }
 
             System.out.print("\nAnother customer Y/N? ");
             strCustomer = sc.nextLine();
+            FileLogger.logAnswer("\nAnother customer Y/N? " + strCustomer);
 
             cCustomer = strCustomer.charAt(0);
         } while ((cCustomer == 'Y') || (cCustomer == 'y'));
-        System.out.println("Grocery program is terminating...");
+        FileLogger.log("Grocery program is terminating...");
 
     }
 

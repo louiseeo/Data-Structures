@@ -9,36 +9,39 @@ public class MovieRental {
         Scanner sc = new Scanner(System.in);
 
         do {
-            System.out.println("\nRegistration");
-            System.out.println("1. DVD");
-            System.out.println("2. VCD");
-            System.out.println("3. Tape");
+            FileLogger.log("\nRegistration");
+            FileLogger.log("1. DVD");
+            FileLogger.log("2. VCD");
+            FileLogger.log("3. Tape");
             System.out.print("Choice: ");
             int choice = sc.nextInt();
+            FileLogger.logAnswer("Choice: " + choice);
 
             if (choice == 1) {
-                System.out.println("Type: DVD");
+                FileLogger.log("Type: DVD");
                 dvdTotal = dvdTotal + 1;
             } else if (choice == 2) {
-                System.out.println("Type: VCD");
+                FileLogger.log("Type: VCD");
                 vcdTotal = vcdTotal + 1;
             } else if (choice == 3) {
-                System.out.println("Type: Tape");
+                FileLogger.log("Type: Tape");
                 tapeTotal = tapeTotal + 1;
             }
 
             System.out.print("Input title: ");
-            String title = sc.nextLine();
             sc.nextLine();
+            String title = sc.nextLine();
+            FileLogger.logAnswer("Input title: " + title);
 
-            System.out.println("\n1. Horror");
-            System.out.println("2. Scifi");
-            System.out.println("3. Drama");
-            System.out.println("4. Comedy");
-            System.out.println("5. Cartoons");
+            FileLogger.log("\n1. Horror");
+            FileLogger.log("2. Scifi");
+            FileLogger.log("3. Drama");
+            FileLogger.log("4. Comedy");
+            FileLogger.log("5. Cartoons");
 
             System.out.print("Category: ");
             int category = sc.nextInt();
+            FileLogger.logAnswer("Category: " + category);
 
             if (category == 1)
                 horror = horror + 1;
@@ -53,16 +56,19 @@ public class MovieRental {
 
             System.out.print("Minutes: ");
             int minutes = sc.nextInt();
+            FileLogger.logAnswer("Minutes: " + minutes);
 
             System.out.print("Setting: ");
-            String setting = sc.nextLine();
             sc.nextLine();
+            String setting = sc.nextLine();
+            FileLogger.logAnswer("Setting: " + setting);
 
-            System.out.println("\n1. Rental");
-            System.out.println("2. Sales");
+            FileLogger.log("\n1. Rental");
+            FileLogger.log("2. Sales");
 
             System.out.print("Transaction: ");
             int transaction = sc.nextInt();
+            FileLogger.logAnswer("Transaction: " + transaction);
 
             if (transaction == 1)
                 rent = rent + 1;
@@ -71,23 +77,25 @@ public class MovieRental {
 
             System.out.print("Price: ");
             int price = sc.nextInt();
+            FileLogger.logAnswer("Price: " + price);
 
             System.out.print("Register another? (Y/N) ");
             cRAnother = sc.next().charAt(0);
+            FileLogger.logAnswer("Register another? (Y/N) " + cRAnother);
 
         } while (cRAnother == 'y' || cRAnother == 'Y');
 
-        System.out.println("\nREPORTS");
-        System.out.println("For rent: " + rent);
-        System.out.println("For sale: " + sales);
-        System.out.println("VCD Total: " + vcdTotal);
-        System.out.println("DVD Total: " + dvdTotal);
-        System.out.println("Tape Total: " + tapeTotal);
-        System.out.println("Horror Movies: " + horror);
-        System.out.println("Scifi Movies: " + scifi);
-        System.out.println("Drama Movies: " + drama);
-        System.out.println("Comedy Movies: " + comedy);
-        System.out.println("Catoons: " + cartoons);
+        FileLogger.log("\nREPORTS");
+        FileLogger.log("For rent: " + rent);
+        FileLogger.log("For sale: " + sales);
+        FileLogger.log("VCD Total: " + vcdTotal);
+        FileLogger.log("DVD Total: " + dvdTotal);
+        FileLogger.log("Tape Total: " + tapeTotal);
+        FileLogger.log("Horror Movies: " + horror);
+        FileLogger.log("Scifi Movies: " + scifi);
+        FileLogger.log("Drama Movies: " + drama);
+        FileLogger.log("Comedy Movies: " + comedy);
+        FileLogger.log("Catoons: " + cartoons);
 
     }
 }

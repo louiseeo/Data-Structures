@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MovieRegistrationMenu_Edit {
+public class MovieMenu_Edit {
     // Make these fields accessible for the whole program
     static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
@@ -14,7 +14,8 @@ public class MovieRegistrationMenu_Edit {
 
         do {
             System.out.println("""
-                    \nWelcome to Movie Registration Menu!
+                    \n===================================
+                    Welcome to Movie Registration Menu!
                     [1] Add
                     [2] Search
                     [3] Edit
@@ -34,15 +35,12 @@ public class MovieRegistrationMenu_Edit {
 
             switch (choice) {
                 case 1:
-                    // Add function
                     addMovies();
                     break;
                 case 2:
-                    // Search
                     searchMovie();
                     break;
                 case 3:
-                    // Edit
                     editMovie();
                     break;
                 case 4:
@@ -52,7 +50,6 @@ public class MovieRegistrationMenu_Edit {
                     // Sort
                     break;
                 case 6:
-                    // List / Display items
                     displayList();
                     break;
                 case 0:
@@ -67,7 +64,10 @@ public class MovieRegistrationMenu_Edit {
         sc.close();
     }
 
-    // Method 1: Adding movies to the txt
+    /**
+     * Adds a new movie entry to the text file.
+     * Handles user input for movie details and persists them for later retrieval.
+     */
     public static void addMovies() {
         System.out.print("Enter title: ");
         String title = sc.nextLine();
@@ -89,7 +89,10 @@ public class MovieRegistrationMenu_Edit {
         System.out.println("\nMovie successfully added!\n");
     }
 
-    // Method 2: Search
+    /**
+     * Searches for a movie in the list.
+     * Allows lookup by user input index and displays matching results.
+     */
     public static void searchMovie() {
         if (isMovieListEmpty())
             return; // check if movie list is empty
@@ -103,7 +106,11 @@ public class MovieRegistrationMenu_Edit {
         System.out.println("Director: " + movie.get(start + 4));
     }
 
-    // Method 3: Edit
+    /**
+     * Edits an existing movie entry.
+     * Enables modification of stored movie details such as title, year, genre,
+     * duration, or director.
+     */
     public static void editMovie() {
         if (isMovieListEmpty())
             return; // check if movie list is empty
@@ -170,37 +177,41 @@ public class MovieRegistrationMenu_Edit {
 
         } while (choice != 0);
     }
-    // Method 4: Delete
-    // Method 5: Sort
 
-    // Method 6: List/Display elements in the array
+    /**
+     * Displays all movies in the list.
+     * Prints each movie’s details (title, year, genre, duration, director) in a
+     * structured format.
+     */
     public static void displayList() {
-        if (isMovieListEmpty())
-            return; // check if movie list is empty
-
-        System.out.println("---------- MOVIE LIST ----------");
-        int movieCount = 1;
-
-        for (int i = 0; i < movie.size(); i++) {
-            if (i % 5 == 0) {
-                System.out.print(movieCount + ". Title: ");
-                movieCount++;
-            } else if (i % 5 == 1) {
-                System.out.print("   Year: ");
-            } else if (i % 5 == 2) {
-                System.out.print("   Genre: ");
-            } else if (i % 5 == 3) {
-                System.out.print("   Duration: ");
-            } else if (i % 5 == 4) {
-                System.out.print("   Director: ");
-            }
-            System.out.println(movie.get(i)); // print the infos
-            if (i % 5 == 4) {
-                System.out.println(); // add space to move to next movie
-            }
+        if (movie.isEmpty()) {
+            System.out.println("No movies found in the list.");
+            return;
         }
-    }
 
+        System.out.println("============================================== MOVIE LIST ==============================================");
+
+        // Print table header with borders
+        System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
+        System.out.printf("| %-2s | %-28s | %-4s | %-23s | %-8s | %-20s |%n",
+                "#", "Title", "Year", "Genre", "Duration", "Director");
+        System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
+
+        int movieCount = 1;
+        for (int i = 0; i < movie.size(); i += 5) {
+            System.out.printf("| %-2d | %-28s | %-4s | %-23s | %-8s | %-20s |%n",
+                    movieCount,
+                    movie.get(i), // Title
+                    movie.get(i + 1), // Year
+                    movie.get(i + 2), // Genre
+                    movie.get(i + 3), // Duration
+                    movie.get(i + 4)); // Director
+            movieCount++;
+        }
+
+        // Print bottom border
+        System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
+    }
     // ---------- Helper Methods ----------
     // Load data for easy access for the whole menu
     public static void loadMovies() {

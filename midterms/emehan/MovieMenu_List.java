@@ -1,17 +1,17 @@
+package emehan;
 import java.io.*;
 import java.util.*;
 
-public class MovieMenu_Search {
-    // Make these fields accessible for the whole program
+public class MovieMenu_List {
+    // Make these fields accesible for the whole program
     static String filename = "movies.txt";
     static ArrayList<String> movie = new ArrayList<>();
-    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int choice = 0;
 
         loadMovies(); // call the method to load movies to the array list
-
         do {
             System.out.println("""
                     \n===================================
@@ -35,10 +35,10 @@ public class MovieMenu_Search {
 
             switch (choice) {
                 case 1:
-                    addMovies();
+                    // Add function
                     break;
                 case 2:
-                    searchMovie();
+                    // Search
                     break;
                 case 3:
                     // Edit
@@ -62,48 +62,6 @@ public class MovieMenu_Search {
 
         } while (choice != 0);
         sc.close();
-    }
-
-    /**
-     * Adds a new movie entry to the text file.
-     * Handles user input for movie details and persists them for later retrieval.
-     */
-    public static void addMovies() {
-        System.out.print("Enter title: ");
-        String title = sc.nextLine();
-        movie.add(title);
-        System.out.print("Enter year released: ");
-        String year = sc.nextLine();
-        movie.add(year);
-        System.out.print("Enter genre: ");
-        String genre = sc.nextLine();
-        movie.add(genre);
-        System.out.print("Enter duration(e.g., 2h 30m): ");
-        String duration = sc.nextLine();
-        movie.add(duration);
-        System.out.print("Enter name of director: ");
-        String director = sc.nextLine();
-        movie.add(director);
-
-        saveMovies();
-        System.out.println("\nMovie successfully added!\n");
-    }
-
-    /**
-     * Searches for a movie in the list.
-     * Allows lookup by user input index and displays matching results.
-     */
-    public static void searchMovie() {
-        if (isMovieListEmpty())
-            return; // check if movie list is empty
-
-        int start = getMovieStartIndex();
-        System.out.println("\n---- Movie Found ----");
-        System.out.println("Title: " + movie.get(start));
-        System.out.println("Year : " + movie.get(start + 1));
-        System.out.println("Genre: " + movie.get(start + 2));
-        System.out.println("Duration: " + movie.get(start + 3));
-        System.out.println("Director: " + movie.get(start + 4));
     }
 
     /**
@@ -141,7 +99,7 @@ public class MovieMenu_Search {
         System.out.println("+----+------------------------------+------+-------------------------+----------+----------------------+");
     }
 
-    // ---------- Helper Methods ----------
+    // Helper Methods
     // Load data for easy access for the whole menu
     public static void loadMovies() {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
@@ -163,52 +121,6 @@ public class MovieMenu_Search {
         } catch (IOException e) {
             System.out.println("Error reading the file: " + e.getMessage());
         }
-    }
-
-    // Save file for the whole menu
-    public static void saveMovies() {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
-            for (String data : movie) {
-                bw.write(data);
-                bw.newLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error saving movies: " + e.getMessage());
-        }
-    }
-
-    // Helper method to get the movie index for overall access in the program
-    public static int getMovieStartIndex() {
-        while (true) {
-            // ask user to enter a movie number to search
-            System.out.println("Available movies: " + movie.size() / 5);
-            System.out.print("Enter movie number: ");
-
-            // chech if user entered a valid input
-            if (!sc.hasNextInt()) {
-                System.out.println("Invalid input! Please enter a number.\n");
-                sc.nextLine();
-                continue;
-            }
-            int num = sc.nextInt();
-            sc.nextLine();
-
-            // validate the entered number, search, and display
-            if (num >= 1 && num <= movie.size() / 5) {
-                return (num - 1) * 5; // compute the starting index
-            } else {
-                System.out.println("Invalid number! Please enter another.\n");
-            }
-        }
-    }
-
-    // If movie list is empty helper for the whole program
-    public static boolean isMovieListEmpty() {
-        if (movie.isEmpty()) {
-            System.out.println("Movie list is empty.");
-            return true;
-        }
-        return false;
     }
 
 }

@@ -1,3 +1,4 @@
+package emehan;
 import java.util.*;
 
 public class MovieMenu {

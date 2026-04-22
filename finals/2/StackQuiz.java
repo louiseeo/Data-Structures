@@ -29,13 +29,13 @@ public class StackQuiz {
         int choice = -1;
         do {
             System.out.println("\n-------------------------------------");
-            System.out.println("Question # " + (index + 1));
+            System.out.println("Question # " + (index + 1) + " | Answered: " + countAnswered() + "/" + qs.length);
             System.out.println(qs[index]);
             if (answered[index]) {
                 if (correct[index])
-                    System.out.println("Tama ka dito beh!");
+                    System.out.println("You got it correctly here!");
                 else if (!(correct[index]))
-                    System.out.println("Minali mo to tey!");
+                    System.out.println("You got this wrong!");
             }
             System.out.println("[1] Answer  [2] Back  [3] Next  [4] Exit\n");
             System.out.print("Choice: ");
@@ -43,62 +43,81 @@ public class StackQuiz {
             try {
                 choice = Integer.parseInt(sc.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input! Enter another.\n");
+                System.out.println("Invalid input! Enter another.");
                 continue;
             }
-      
+
             switch (choice) {
                 case 1: // Answer
-
+                    answer();
                     break;
 
                 case 2: // Back
                     if (oStack.isEmpty())
-                        System.out.println("No previous question yet!");
+                        System.out.println("No previous question!");
                     else {
                         index = oStack.pop();
                     }
                     break;
 
-                case 3: // next
+                case 3: // Next
                     if (index < qs.length - 1) {
                         oStack.push(index);
                         index++;
                     } else
-                        System.out.println("Already at the last question");
+                        System.out.println("You are at the last question.");
                     break;
 
-                case 4:
-                    System.exit(0);
+                case 4: // Exit
                     break;
 
                 default:
-                    System.out.println("Invalid choice!");
-
+                    System.out.println("Invalid choice! Enter another.");
             }
 
         } while (choice != 4);
 
+        // Summary after quiz
+        System.out.println("\n========== QUIZ OVER ==========");
+        System.out.println("Final Score: " + points + "/" + qs.length);
+        System.out.println("--------------------------------");
+        for (int i = 0; i < qs.length; i++) {
+            if (!answered[i])
+                System.out.println("Q" + (i + 1) + ": Not answered");
+            else if (correct[i])
+                System.out.println("Q" + (i + 1) + ": Correct");
+            else
+                System.out.println("Q" + (i + 1) + ": Wrong (Answer: " + as[i] + ")");
+        }
+        System.out.println("================================");
     }
 
+    // Method for checking the answer
     public static void answer() {
         if (answered[index])
             System.out.println("You have already answered that question!");
         else {
             System.out.print("Answer: ");
-            ans = sc.nextLine();
+            ans = sc.nextLine().trim();
             if (ans.equalsIgnoreCase(as[index])) {
-                System.out.println("Absolutely correct!");
-                correct[index] = true; // tama sya!
+                System.out.println("Correct ka mhie!");
+                correct[index] = true;
                 points++;
-
             } else {
-                System.out.println("Do better next time!");
-                correct[index] = false; // mali sya!
-
+                System.out.println("Malii ka beh!");
+                correct[index] = false;
             }
             answered[index] = true;
             System.out.println("Points: " + points);
         }
+    }
+
+    // Method that counts the correct answered
+    public static int countAnswered() {
+        int count = 0;
+        for (boolean b : answered)
+            if (b)
+                count++;
+        return count;
     }
 }

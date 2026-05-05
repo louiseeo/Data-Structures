@@ -1,3 +1,4 @@
+package dif;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -16,7 +17,8 @@ public class MainMenu {
             FileLogger.log("\nPlease choose one of the following:");
             FileLogger.log("1. EFM Grocery ShopperMart POS");
             FileLogger.log("2. EFM Movie Rental Registration");
-            FileLogger.log("3. EFM Movie Registration");
+            FileLogger.log("3. EFM Stack Quiz");
+            FileLogger.log("4. EFM Quizzer Game");
             FileLogger.log("0. Exit");
 
             System.out.print("Choice: ");

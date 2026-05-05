@@ -88,7 +88,7 @@ public class QuizzerGame {
                     back = true;
                     break;
                 default:
-                    System.out.println("Invalid choice. Try again.");
+                    System.out.println("Invalid choice! Try again.");
             }
         }
     }
@@ -128,7 +128,7 @@ public class QuizzerGame {
                     back = true;
                     break;
                 default:
-                    System.out.println("Invalid choice. Try again.");
+                    System.out.println("Invalid choice! Try again.");
             }
         }
     }
@@ -138,7 +138,7 @@ public class QuizzerGame {
         System.out.print("Enter player name: ");
         String name = sc.nextLine();
         if (name.isEmpty()) {
-            System.out.println("Player name must not be blank!");
+            System.out.println("Player name must not be empty!");
         } else {
             players.add(name);
         }

@@ -1,0 +1,21 @@
+What does LIFO stand for?|Last In First Out
+What do you call the front element of a queue?|front
+What is the process of adding an element to a stack?|push
+What is the process of removing an element from a stack?|pop
+What is the process of removing an element from a queue?|dequeue
+What data structure is used in recursion?|Stack
+What is an empty stack condition called?|underflow
+What is 5 x 5?|25
+What is 100 divided by 4?|25
+What is the square root of 144?|12
+What is 15% of 200?|30
+What is the powerhouse of the cell?|Mitochondria
+What planet is closest to the sun?|Mercury
+What gas do plants absorb from the atmosphere?|Carbon dioxide
+What year did the Philippines gain independence from the US?|1946
+Who wrote the Philippine national anthem?|Julian Felipe
+What is the national flower of the Philippines?|Sampaguita
+What is the largest ocean in the world?|Pacific Ocean
+What color is the sky on a clear day?|Blue
+How many sides does a hexagon have?|6
+What is 1 + 1?|2

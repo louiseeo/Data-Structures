@@ -10,17 +10,18 @@ public class MainMenu {
         int choice = 0;
 
         do {
-            FileLogger.log("\n=================================");
-            FileLogger.log("Welcome to EFM Enterprise Systems");
-            FileLogger.log("We've got it all for you!");
-            FileLogger.log("\nPlease choose one of the following:");
-            FileLogger.log("1. EFM Grocery ShopperMart POS");
-            FileLogger.log("2. EFM Movie Rental Registration");
-            FileLogger.log("3. EFM Movie Registration");
-            FileLogger.log("4. EFM Stack Quiz");
-            FileLogger.log("5. EFM Quiz Bee");
-            FileLogger.log("6. EFM Quizzer Game");
-            FileLogger.log("0. Exit");
+            FileLogger.log("""
+                    \n====================================
+                    Welcome to EFM Enterprise Systems
+                    We've got it all for you!
+                    \nPlease choose one of the following:
+                    1. EFM Grocery ShopperMart POS
+                    2. EFM Movie Rental Registration
+                    3. EFM Movie Registration
+                    4. EFM Stack Quiz
+                    5. EFM Quiz Bee
+                    6. EFM Quizzer Game
+                    0. Exit""");
 
             System.out.print("Choice: ");
             if (!sc.hasNextInt()) {

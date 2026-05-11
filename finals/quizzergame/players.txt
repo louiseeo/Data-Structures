@@ -1,0 +1,5 @@
+Sonya|1
+Emi|1
+Love|4
+John|6
+Panying|0

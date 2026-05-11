@@ -19,7 +19,7 @@ public class QuizzerGame {
     static List<String> players = new ArrayList<>();
 
     // Static fields for question
-    static String questionFilename = "questions.txt";
+    static String questionFilename = "questions_quizzergame.txt";
     static List<String> questions = new ArrayList<>();
 
     public static void main(String[] args) {

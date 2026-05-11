@@ -1,0 +1,535 @@
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 5
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+Invalid input! Enter another.
+
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 5
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Invalid input! Enter another.
+
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 5
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 1
+Enter your name: loi
+
+Welcome to Quiz Bee loi!
+You may now proceed to menu 2.
+
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Invalid input! Enter another.
+
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 5
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 2
+
+Cannot start the quiz bee. Register first!
+
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Invalid input! Enter another.
+
+
+=================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 5
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 2
+
+Cannot start the quiz bee. Register first!
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 1
+Enter your name: lo
+
+Welcome to Quiz Bee lo!
+You may now proceed to menu 2.
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 2
+--- Starting the Quiz! ---
+
+Question 1: What is the capital of Australia?
+A. Sydney
+B. Melbourne
+C. Canberra
+D. Brisbane
+Your Answer: a
+Wrong. The correct answer was: C
+
+Question 2: Who painted the Mona Lisa?
+A. Michelangelo
+B. Vincent van Gogh
+C. Leonardo da Vinci
+D. Pablo Picasso
+Your Answer: c
+Correct!
+
+Question 3: Which planet is known as the Red Planet?
+A. Mars
+B. Jupiter
+C. Saturn
+D. Venus
+Your Answer: q
+Wrong. The correct answer was: A
+
+Question 4: In which year did World War II end?
+A. 1942
+B. 1945
+C. 1950
+D. 1939
+Your Answer: w
+Wrong. The correct answer was: B
+
+Question 5: What is the chemical symbol for gold?
+A. Au
+B. Ag
+C. Go
+D. Gd
+Your Answer: w
+Wrong. The correct answer was: A
+
+Question 6: What is the tallest mountain in the world?
+A. Mount Kilimanjaro
+B. Mount Fuji
+C. Mount Everest
+D. K2
+Your Answer: w
+Wrong. The correct answer was: C
+
+Question 7: Who wrote Romeo and Juliet?
+A. Charles Dickens
+B. William Shakespeare
+C. Jane Austen
+D. George Orwell
+Your Answer: w
+Wrong. The correct answer was: B
+
+Question 8: Which ocean is the largest?
+A. Atlantic
+B. Indian
+C. Arctic
+D. Pacific
+Your Answer: w
+Wrong. The correct answer was: D
+
+Question 9: What’s the smallest prime number?
+A. 1
+B. 2
+C. 3
+D. 5
+Your Answer: w
+Wrong. The correct answer was: B
+
+Question 10: What gas do plants absorb from the atmosphere?
+A. Oxygen
+B. Nitrogen
+C. Carbon dioxide
+D. Helium
+Your Answer: w
+Wrong. The correct answer was: C
+
+Question 11: This is the largest planet in our solar system.
+Your Answer: w
+Wrong. The correct answer was: Jupiter
+
+Question 12: This scientist developed the theory of general relativity.
+Your Answer: ww
+Wrong. The correct answer was: Albert Einstein
+
+Question 13: This is the process by which plants make their own food using sunlight.
+Your Answer: w
+Wrong. The correct answer was: Photosynthesis
+
+Question 14: This organ pumps blood throughout the human body.
+Your Answer: w
+Wrong. The correct answer was: Heart
+
+Question 15: This is the chemical symbol for water.
+Your Answer: w
+Wrong. The correct answer was: H2O
+
+Question 16: This country is home to the Great Wall, one of the longest structures ever built.
+Your Answer: w
+Wrong. The correct answer was: China
+
+Question 17: This is the name of the force that pulls objects toward the Earth.
+Your Answer: w
+Wrong. The correct answer was: Gravity
+
+Question 18: Who is the 7th President of the Philippines?
+Your Answer: w
+Wrong. The correct answer was: Ramon Magsaysay
+
+Question 19: This is the powerhouse of the cell.
+Your Answer: w
+Wrong. The correct answer was: Mitochondria
+
+Question 20: The angle of earth's axis
+Your Answer: w
+Wrong. The correct answer was: 23.5
+
+Question 21: The Earth revolves around the ______________.
+Your Answer: w
+Wrong. The correct answer was: Sun
+
+Question 22: Water freezes at ______ degrees Celsius.
+Your Answer: w
+Wrong. The correct answer was: 0
+
+Question 23: The ______________ is the largest mammal on Earth.
+Your Answer: w
+Wrong. The correct answer was: Blue Whale
+
+Question 24: Humans have ______ chromosomes in each body cell.
+Your Answer: w
+Wrong. The correct answer was: 46
+
+Question 25: The process of a caterpillar transforming into a butterfly is called ______________.
+Your Answer: w
+Wrong. The correct answer was: Metamorphosis
+
+Question 26: The speed of light is approximately ______ kilometers per second.
+Your Answer: w
+Wrong. The correct answer was: 300000
+
+Question 27: The chemical symbol for silver is ______.
+Your Answer: w
+Wrong. The correct answer was: Ag
+
+Question 28: The chemical symbol for copper is ______.
+Your Answer: w
+Wrong. The correct answer was: Cu
+
+Question 29: A ______________ is a word that describes or modifies a noun.
+Your Answer: w
+Wrong. The correct answer was: Adjective
+
+Question 30: The ______________ is the part of the plant responsible for absorbing water and nutrients from the soil.
+Your Answer: w
+Wrong. The correct answer was: Root
+
+========== QUIZ OVER ==========
+Final score: 1/30
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 2
+--- Starting the Quiz! ---
+
+Question 1: What is the capital of Australia?
+A. Sydney
+B. Melbourne
+C. Canberra
+D. Brisbane
+Your Answer: w
+Wrong. The correct answer was: C
+
+Question 2: Who painted the Mona Lisa?
+A. Michelangelo
+B. Vincent van Gogh
+C. Leonardo da Vinci
+D. Pablo Picasso
+Your Answer: w
+Wrong. The correct answer was: C
+
+Question 3: Which planet is known as the Red Planet?
+A. Mars
+B. Jupiter
+C. Saturn
+D. Venus
+Your Answer: w
+Wrong. The correct answer was: A
+
+Question 4: In which year did World War II end?
+A. 1942
+B. 1945
+C. 1950
+D. 1939
+Your Answer: w
+Wrong. The correct answer was: B
+
+Question 5: What is the chemical symbol for gold?
+A. Au
+B. Ag
+C. Go
+D. Gd
+Your Answer: ww
+Wrong. The correct answer was: A
+
+Question 6: What is the tallest mountain in the world?
+A. Mount Kilimanjaro
+B. Mount Fuji
+C. Mount Everest
+D. K2
+Your Answer: w
+Wrong. The correct answer was: C
+
+Question 7: Who wrote Romeo and Juliet?
+A. Charles Dickens
+B. William Shakespeare
+C. Jane Austen
+D. George Orwell
+Your Answer: w
+Wrong. The correct answer was: B
+
+Question 8: Which ocean is the largest?
+A. Atlantic
+B. Indian
+C. Arctic
+D. Pacific
+Your Answer: w
+Wrong. The correct answer was: D
+
+Question 9: What’s the smallest prime number?
+A. 1
+B. 2
+C. 3
+D. 5
+Your Answer: w
+Wrong. The correct answer was: B
+
+Question 10: What gas do plants absorb from the atmosphere?
+A. Oxygen
+B. Nitrogen
+C. Carbon dioxide
+D. Helium
+Your Answer: ww
+Wrong. The correct answer was: C
+
+Question 11: This is the largest planet in our solar system.
+Your Answer: w
+Wrong. The correct answer was: Jupiter
+
+Question 12: This scientist developed the theory of general relativity.
+Your Answer: w
+Wrong. The correct answer was: Albert Einstein
+
+Question 13: This is the process by which plants make their own food using sunlight.
+Your Answer: ww
+Wrong. The correct answer was: Photosynthesis
+
+Question 14: This organ pumps blood throughout the human body.
+Your Answer: w
+Wrong. The correct answer was: Heart
+
+Question 15: This is the chemical symbol for water.
+Your Answer: w
+Wrong. The correct answer was: H2O
+
+Question 16: This country is home to the Great Wall, one of the longest structures ever built.
+Your Answer: w
+Wrong. The correct answer was: China
+
+Question 17: This is the name of the force that pulls objects toward the Earth.
+Your Answer: ww
+Wrong. The correct answer was: Gravity
+
+Question 18: Who is the 7th President of the Philippines?
+Your Answer: w
+Wrong. The correct answer was: Ramon Magsaysay
+
+Question 19: This is the powerhouse of the cell.
+Your Answer: w
+Wrong. The correct answer was: Mitochondria
+
+Question 20: The angle of earth's axis
+Your Answer: w
+Wrong. The correct answer was: 23.5
+
+Question 21: The Earth revolves around the ______________.
+Your Answer: ww
+Wrong. The correct answer was: Sun
+
+Question 22: Water freezes at ______ degrees Celsius.
+Your Answer: w
+Wrong. The correct answer was: 0
+
+Question 23: The ______________ is the largest mammal on Earth.
+Your Answer: w
+Wrong. The correct answer was: Blue Whale
+
+Question 24: Humans have ______ chromosomes in each body cell.
+Your Answer: w
+Wrong. The correct answer was: 46
+
+Question 25: The process of a caterpillar transforming into a butterfly is called ______________.
+Your Answer: ww
+Wrong. The correct answer was: Metamorphosis
+
+Question 26: The speed of light is approximately ______ kilometers per second.
+Your Answer: w
+Wrong. The correct answer was: 300000
+
+Question 27: The chemical symbol for silver is ______.
+Your Answer: w
+Wrong. The correct answer was: Ag
+
+Question 28: The chemical symbol for copper is ______.
+Your Answer: w
+Wrong. The correct answer was: Cu
+
+Question 29: A ______________ is a word that describes or modifies a noun.
+Your Answer: ww
+Wrong. The correct answer was: Adjective
+
+Question 30: The ______________ is the part of the plant responsible for absorbing water and nutrients from the soil.
+Your Answer: w
+Wrong. The correct answer was: Root
+
+========== QUIZ OVER ==========
+Final score: 0/30
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Invalid input! Enter another.
+
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 232
+Invalid choice! Pick another one.
+
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 1
+Enter your name: 
+
+Welcome to Quiz Bee !
+You may now proceed to menu 2.
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 1
+Enter your name: loi
+
+Welcome to Quiz Bee loi!
+You may now proceed to menu 2.
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 3
+Thank you for playing!
+Terminating program...

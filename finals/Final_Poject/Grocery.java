@@ -1,4 +1,3 @@
-package dif;
 import java.util.*;
 
 public class Grocery {

@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -28,24 +29,26 @@ public class StackQuiz {
     public static void main(String[] args) {
         int choice = -1;
         do {
-            System.out.println("\n-------------------------------------");
-            System.out.println("Question # " + (index + 1) + " | Answered: " + countAnswered() + "/" + qs.length);
-            System.out.println(qs[index]);
+            FileLogger.log("\n-------------------------------------");
+            FileLogger.log("Question # " + (index + 1) + " | Answered: " + countAnswered() + "/" + qs.length);
+            FileLogger.log(qs[index]);
             if (answered[index]) {
                 if (correct[index])
-                    System.out.println("You got it correctly here!");
+                    FileLogger.log("You got it correctly here!");
                 else if (!(correct[index]))
-                    System.out.println("You got this wrong!");
+                    FileLogger.log("You got this wrong!");
             }
-            System.out.println("[1] Answer  [2] Back  [3] Next  [4] Exit\n");
+            FileLogger.log("[1] Answer  [2] Back  [3] Next  [4] Exit\n");
             System.out.print("Choice: ");
 
             try {
                 choice = Integer.parseInt(sc.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input! Enter another.");
+                FileLogger.log("Invalid input! Enter another.");
                 continue;
             }
+
+            FileLogger.logAnswer("Choice: " + choice);
 
             switch (choice) {
                 case 1: // Answer
@@ -54,7 +57,7 @@ public class StackQuiz {
 
                 case 2: // Back
                     if (oStack.isEmpty())
-                        System.out.println("No previous question!");
+                        FileLogger.log("No previous question!");
                     else {
                         index = oStack.pop();
                     }
@@ -65,50 +68,51 @@ public class StackQuiz {
                         oStack.push(index);
                         index++;
                     } else
-                        System.out.println("You are at the last question.");
+                        FileLogger.log("You are at the last question.");
                     break;
 
                 case 4: // Exit
                     break;
 
                 default:
-                    System.out.println("Invalid choice! Enter another.");
+                    FileLogger.log("Invalid choice! Enter another.");
             }
 
         } while (choice != 4);
 
         // Summary after quiz
-        System.out.println("\n========== QUIZ OVER ==========");
-        System.out.println("Final Score: " + points + "/" + qs.length);
-        System.out.println("--------------------------------");
+        FileLogger.log("\n========== QUIZ OVER ==========");
+        FileLogger.log("Final Score: " + points + "/" + qs.length);
+        FileLogger.log("--------------------------------");
         for (int i = 0; i < qs.length; i++) {
             if (!answered[i])
-                System.out.println("Q" + (i + 1) + ": Not answered");
+                FileLogger.log("Q" + (i + 1) + ": Not answered");
             else if (correct[i])
-                System.out.println("Q" + (i + 1) + ": Correct");
+                FileLogger.log("Q" + (i + 1) + ": Correct");
             else
-                System.out.println("Q" + (i + 1) + ": Wrong (Answer: " + as[i] + ")");
+                FileLogger.log("Q" + (i + 1) + ": Wrong (Answer: " + as[i] + ")");
         }
-        System.out.println("================================");
+        FileLogger.log("================================");
     }
 
     // Method for checking the answer
     public static void answer() {
         if (answered[index])
-            System.out.println("You have already answered that question!");
+            FileLogger.log("You have already answered that question!");
         else {
             System.out.print("Answer: ");
             ans = sc.nextLine().trim();
+            FileLogger.logAnswer("Answer: " + ans);
             if (ans.equalsIgnoreCase(as[index])) {
-                System.out.println("Correct ka mhie!");
+                FileLogger.log("You are correct!");
                 correct[index] = true;
                 points++;
             } else {
-                System.out.println("Malii ka beh!");
+                FileLogger.log("Oh no! You got it wrong...");
                 correct[index] = false;
             }
             answered[index] = true;
-            System.out.println("Points: " + points);
+            FileLogger.log("Points: " + points);
         }
     }
 

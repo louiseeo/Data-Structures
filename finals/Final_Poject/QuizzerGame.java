@@ -26,19 +26,20 @@ public class QuizzerGame {
         loadPlayers(); // load the players
         loadQuestions();
 
-        System.out.println("\n=============== WELCOME TO QUIZZER GAME ================");
+        FileLogger.log("\n=============== WELCOME TO QUIZZER GAME ================");
         boolean running = true;
 
         while (running) {
-            System.out.println("""
-                     \n------- MAIN MENU -------
-                     [1] Player Registration
-                     [2] Question Bank
-                     [3] Play Game
-                     [4] Exit
+            FileLogger.log("""
+                    \n------- MAIN MENU -------
+                    [1] Player Registration
+                    [2] Question Bank
+                    [3] Play Game
+                    [4] Exit
                     """);
             System.out.print("Choice: ");
             String choice = sc.nextLine().trim();
+            FileLogger.logAnswer("Choice: " + choice);
 
             switch (choice) {
                 case "1":
@@ -51,11 +52,11 @@ public class QuizzerGame {
                     playGame();
                     break;
                 case "4":
-                    System.out.println("\nSaving data and exiting... Goodbye!");
+                    FileLogger.log("\nSaving data and exiting... Goodbye!");
                     running = false;
                     break;
                 default:
-                    System.out.println("Invalid choice! Try again.");
+                    FileLogger.log("Invalid choice! Try again.");
             }
         }
 
@@ -66,7 +67,7 @@ public class QuizzerGame {
         boolean back = false;
 
         while (!back) {
-            System.out.println("""
+            FileLogger.log("""
                     \n------- PLAYER REGISTRATION -------
                     [1] Add Player
                     [2] Edit Player
@@ -77,8 +78,8 @@ public class QuizzerGame {
                     [0] Back
                     """);
             System.out.print("Choice: ");
-
             String choice = sc.nextLine().trim();
+            FileLogger.logAnswer("Choice: " + choice);
 
             switch (choice) {
                 case "1":
@@ -103,7 +104,7 @@ public class QuizzerGame {
                     back = true;
                     break;
                 default:
-                    System.out.println("Invalid choice! Try again.");
+                    FileLogger.log("Invalid choice! Try again.");
             }
         }
     }
@@ -112,7 +113,7 @@ public class QuizzerGame {
         boolean back = false;
 
         while (!back) {
-            System.out.println("""
+            FileLogger.log("""
                     \n------- QUESTION BANK -------
                     [1] Add Question
                     [2] Edit Question
@@ -122,8 +123,8 @@ public class QuizzerGame {
                     [0] Back
                     """);
             System.out.print("Choice: ");
-
             String choice = sc.nextLine().trim();
+            FileLogger.logAnswer("Choice: " + choice);
 
             switch (choice) {
                 case "1":
@@ -145,7 +146,7 @@ public class QuizzerGame {
                     back = true;
                     break;
                 default:
-                    System.out.println("Invalid choice! Try again.");
+                    FileLogger.log("Invalid choice! Try again.");
             }
         }
     }
@@ -154,12 +155,13 @@ public class QuizzerGame {
     public static void addPlayer() {
         System.out.print("Enter player name: ");
         String name = sc.nextLine();
+        FileLogger.logAnswer("Enter player name: " + name);
         if (name.isEmpty()) {
-            System.out.println("Player name must not be empty!");
+            FileLogger.log("Player name must not be empty!");
         } else {
             players.add(name + "|0");
             savePlayers();
-            System.out.println("Player added successfully!");
+            FileLogger.log("Player added successfully!");
         }
 
     }
@@ -167,23 +169,24 @@ public class QuizzerGame {
     // Player Registration case 2: editing player
     public static void editPlayer() {
         if (players.isEmpty()) {
-            System.out.println("No players found.");
+            FileLogger.log("No players found.");
             return;
         }
 
         listPlayers();
         System.out.print("Enter player number to edit: ");
         String input = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter player number to edit: " + input);
         int index;
         try {
             index = Integer.parseInt(input) - 1;
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input! Please enter a number.");
+            FileLogger.log("Invalid input! Please enter a number.");
             return;
         }
 
         if (index < 0 || index >= players.size()) {
-            System.out.println("Invalid number!");
+            FileLogger.log("Invalid number!");
             return;
         }
 
@@ -194,65 +197,66 @@ public class QuizzerGame {
 
         System.out.print("Enter new name (old: " + oldName + "): ");
         String newName = sc.nextLine().trim();
-
+        FileLogger.logAnswer("Enter new name (old: " + oldName + "): " + newName);
         if (newName.isEmpty()) {
-            System.out.println("Name must not be empty!");
+            FileLogger.log("Name must not be empty!");
             return;
         }
 
         // reassemble with same scores
         players.set(index, newName + "|" + score);
         savePlayers();
-        System.out.println("Player updated successfully!");
+        FileLogger.log("Player updated successfully!");
     }
 
     // Player registration case 3: deleting players
     public static void deletePlayer() {
         if (players.isEmpty()) {
-            System.out.println("No players found.");
+            FileLogger.log("No players found.");
             return;
         }
 
         listPlayers();
         System.out.print("Enter player number to delete: ");
         String input = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter player number to delete: " + input);
         int index;
         try {
             index = Integer.parseInt(input) - 1;
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input! Please enter a number.");
+            FileLogger.log("Invalid input! Please enter a number.");
             return;
         }
 
         if (index < 0 || index >= players.size()) {
-            System.out.println("Invalid number!");
+            FileLogger.log("Invalid number!");
             return;
         }
 
         String[] parts = players.get(index).split("\\|");
         System.out.print("Are you sure you want to delete " + parts[0] + "? (y/n): ");
         String confirm = sc.nextLine().trim();
-
+        FileLogger.logAnswer("Are you sure you want to delete " + parts[0] + "? (y/n): " + confirm);
         if (confirm.equalsIgnoreCase("y")) {
             players.remove(index);
             savePlayers();
-            System.out.println("Player deleted successfully!");
+            FileLogger.log("Player deleted successfully!");
         } else {
-            System.out.println("Deletion cancelled.");
+            FileLogger.log("Deletion cancelled.");
         }
     }
 
     // Player registration case 4: listing players
     public static void listPlayers() {
         if (players.isEmpty()) {
-            System.out.println("No players saved yet.");
+            FileLogger.log("No players saved yet.");
             return;
         }
 
-        System.out.println("\n---------- PLAYER LIST ----------");
+        FileLogger.log("\n---------- PLAYER LIST ----------");
         for (int i = 0; i < players.size(); i++) {
             String[] parts = players.get(i).split("\\|");
-            System.out.println("[" + (i + 1) + "] " + parts[0]);
+            FileLogger.log("[" + (i + 1) + "] " + parts[0]);
         }
     }
 
@@ -260,26 +264,26 @@ public class QuizzerGame {
     public static void searchPlayer() {
         System.out.print("Enter player name to search: ");
         String name = sc.nextLine().trim();
-
+        FileLogger.logAnswer("Enter player name to search: " + name);
         boolean found = false;
         for (int i = 0; i < players.size(); i++) {
             String[] parts = players.get(i).split("\\|");
             if (parts[0].equalsIgnoreCase(name)) {
-                System.out.println("Found: [" + (i + 1) + "] " + parts[0]);
+                FileLogger.log("Found: [" + (i + 1) + "] " + parts[0]);
                 found = true;
                 break;
             }
         }
 
         if (!found) {
-            System.out.println("Player not found.");
+            FileLogger.log("Player not found.");
         }
     }
 
     // Player registration case 6: displaying leaderboard
     public static void leaderboard() {
         if (players.isEmpty()) {
-            System.out.println("No players found.");
+            FileLogger.log("No players found.");
             return;
         }
 
@@ -291,10 +295,10 @@ public class QuizzerGame {
             return scoreB - scoreA;
         });
 
-        System.out.println("\n---------- LEADERBOARD ----------");
+        FileLogger.log("\n---------- LEADERBOARD ----------");
         for (int i = 0; i < sorted.size(); i++) {
             String[] parts = sorted.get(i).split("\\|");
-            System.out.println("[" + (i + 1) + "] " + parts[0] + " - " + parts[1] + " pts");
+            FileLogger.log("[" + (i + 1) + "] " + parts[0] + " - " + parts[1] + " pts");
         }
     }
 
@@ -306,7 +310,7 @@ public class QuizzerGame {
                 bw.newLine();
             }
         } catch (IOException e) {
-            System.out.println("Error saving players: " + e.getMessage());
+            FileLogger.log("Error saving players: " + e.getMessage());
         }
     }
 
@@ -323,7 +327,7 @@ public class QuizzerGame {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error loading players: " + e.getMessage());
+            FileLogger.log("Error loading players: " + e.getMessage());
         }
     }
 
@@ -331,114 +335,119 @@ public class QuizzerGame {
     public static void addQuestion() {
         System.out.print("Enter question: ");
         String question = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter question: " + question);
         if (question.isEmpty()) {
-            System.out.println("Question must not be empty!");
+            FileLogger.log("Question must not be empty!");
             return;
         }
 
         System.out.print("Enter answer: ");
         String answer = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter answer: " + answer);
         if (answer.isEmpty()) {
-            System.out.println("Answer must not be empty!");
+            FileLogger.log("Answer must not be empty!");
             return;
         }
 
         questions.add(question + "|" + answer);
         saveQuestions();
-        System.out.println("Question added successfully!");
+        FileLogger.log("Question added successfully!");
     }
 
     // Question registration case 2: editing question
     public static void editQuestion() {
         if (questions.isEmpty()) {
-            System.out.println("No questions found.");
+            FileLogger.log("No questions found.");
             return;
         }
 
         listQuestions();
         System.out.print("Enter question number to edit: ");
         String input = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter question number to edit: " + input);
         int index;
         try {
             index = Integer.parseInt(input) - 1;
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input! Please enter a number.");
+            FileLogger.log("Invalid input! Please enter a number.");
             return;
         }
 
         if (index < 0 || index >= questions.size()) {
-            System.out.println("Invalid number!");
+            FileLogger.log("Invalid number!");
             return;
         }
 
         System.out.print("Enter new question: ");
         String newQuestion = sc.nextLine().trim();
-
+        FileLogger.logAnswer("Enter new question: " + newQuestion);
         if (newQuestion.isEmpty()) {
-            System.out.println("Question must not be empty!");
+            FileLogger.log("Question must not be empty!");
             return;
         }
 
         System.out.print("Enter new answer: ");
         String newAnswer = sc.nextLine().trim();
-
+        FileLogger.logAnswer("Enter new answer: " + newAnswer);
         if (newAnswer.isEmpty()) {
-            System.out.println("Answer must not be empty!");
+            FileLogger.log("Answer must not be empty!");
             return;
         }
 
         // reassemble with same scores
         questions.set(index, newQuestion + "|" + newAnswer);
         saveQuestions();
-        System.out.println("Question updated successfully!");
+        FileLogger.log("Question updated successfully!");
     }
 
     // Question registration case 3: deleting questions
     public static void deleteQuestion() {
         if (questions.isEmpty()) {
-            System.out.println("No questions found.");
+            FileLogger.log("No questions found.");
             return;
         }
 
         listQuestions();
         System.out.print("Enter question number to delete: ");
         String input = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter question number to delete: " + input);
         int index;
         try {
             index = Integer.parseInt(input) - 1;
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input! Please enter a number.");
+            FileLogger.log("Invalid input! Please enter a number.");
             return;
         }
 
         if (index < 0 || index >= questions.size()) {
-            System.out.println("Invalid number!");
+            FileLogger.log("Invalid number!");
             return;
         }
 
         System.out.print("Are you sure you want to delete this question? (y/n): ");
         String confirm = sc.nextLine().trim();
+        FileLogger.logAnswer("Are you sure you want to delete this question? (y/n): " + confirm);
 
         if (confirm.equalsIgnoreCase("y")) {
             questions.remove(index);
             saveQuestions();
-            System.out.println("Question deleted successfully!");
+            FileLogger.log("Question deleted successfully!");
         } else {
-            System.out.println("Deletion cancelled.");
+            FileLogger.log("Deletion cancelled.");
         }
     }
 
     // Question registration case 4: listing questions
     public static void listQuestions() {
         if (questions.isEmpty()) {
-            System.out.println("No questions saved yet.");
+            FileLogger.log("No questions saved yet.");
             return;
         }
 
-        System.out.println("\n---------- QUESTIONS ----------");
+        FileLogger.log("\n---------- QUESTIONS ----------");
         for (int i = 0; i < questions.size(); i++) {
             String[] parts = questions.get(i).split("\\|");
-            System.out.println("[" + (i + 1) + "] " + parts[0]);
+            FileLogger.log("[" + (i + 1) + "] " + parts[0]);
         }
     }
 
@@ -446,19 +455,20 @@ public class QuizzerGame {
     public static void searchQuestion() {
         System.out.print("Enter question to search: ");
         String keyword = sc.nextLine().trim();
+        FileLogger.logAnswer("Enter question to search: " + keyword);
 
         boolean found = false;
         for (int i = 0; i < questions.size(); i++) {
             String[] parts = questions.get(i).split("\\|");
             if (parts[0].equalsIgnoreCase(keyword)) {
-                System.out.println("Found: [" + (i + 1) + "] " + parts[0]);
+                FileLogger.log("Found: [" + (i + 1) + "] " + parts[0]);
                 found = true;
                 break;
             }
         }
 
         if (!found) {
-            System.out.println("Question not found.");
+            FileLogger.log("Question not found.");
         }
     }
 
@@ -476,7 +486,7 @@ public class QuizzerGame {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error loading questions: " + e.getMessage());
+            FileLogger.log("Error loading questions: " + e.getMessage());
         }
     }
 
@@ -487,34 +497,36 @@ public class QuizzerGame {
                 bw.newLine();
             }
         } catch (IOException e) {
-            System.out.println("Error saving questions: " + e.getMessage());
+            FileLogger.log("Error saving questions: " + e.getMessage());
         }
     }
 
     // PLAY GAME METHOD
     public static void playGame() {
         if (players.isEmpty()) {
-            System.out.println("No players registered yet!");
+            FileLogger.log("No players registered yet!");
             return;
         }
         if (questions.isEmpty()) {
-            System.out.println("No questions in the bank yet!");
+            FileLogger.log("No questions in the bank yet!");
             return;
         }
 
         // pick a player
         listPlayers();
         System.out.print("Enter player number: ");
+      
         int playerIndex;
         try {
             playerIndex = Integer.parseInt(sc.nextLine().trim()) - 1;
+            FileLogger.logAnswer("Enter player number: " + playerIndex);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input! Please enter a number.");
+            FileLogger.log("Invalid input! Please enter a number.");
             return;
         }
 
         if (playerIndex < 0 || playerIndex >= players.size()) {
-            System.out.println("Invalid number!");
+            FileLogger.log("Invalid number!");
             return;
         }
 
@@ -538,48 +550,50 @@ public class QuizzerGame {
             String question = qParts[0];
             String answer = qParts[1];
 
-            System.out.println("\n-------------------------------------");
-            System.out.println(
+            FileLogger.log("\n-------------------------------------");
+            FileLogger.log(
                     "Question # " + (index + 1) + " | Answered: " + countAnswered(answered) + "/" + shuffled.size());
-            System.out.println(question);
+            FileLogger.log(question);
             if (answered[index]) {
                 if (correct[index])
-                    System.out.println("You got this correctly!");
+                    FileLogger.log("You got this correctly!");
                 else
-                    System.out.println("You got this wrong!");
+                    FileLogger.log("You got this wrong!");
             }
-            System.out.println("[1] Answer  [2] Back  [3] Next  [4] Exit");
+            FileLogger.log("[1] Answer  [2] Back  [3] Next  [4] Exit");
             System.out.print("Choice: ");
 
             try {
                 choice = Integer.parseInt(sc.nextLine().trim());
+                FileLogger.logAnswer("Choice: " + choice);
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input!");
+                FileLogger.log("Invalid input!");
                 continue;
             }
 
             switch (choice) {
                 case 1: // answer
                     if (answered[index]) {
-                        System.out.println("Already answered!");
+                        FileLogger.log("Already answered!");
                     } else {
                         System.out.print("Answer: ");
                         String userAnswer = sc.nextLine().trim();
+                        FileLogger.logAnswer("Answer: " + userAnswer);
                         if (userAnswer.equalsIgnoreCase(answer)) {
-                            System.out.println("Correct!");
+                            FileLogger.log("Correct!");
                             correct[index] = true;
                             points++;
                         } else {
-                            System.out.println("Wrong! Answer was: " + answer);
+                            FileLogger.log("Wrong! Answer was: " + answer);
                             correct[index] = false;
                         }
                         answered[index] = true;
-                        System.out.println("Points: " + points);
+                        FileLogger.log("Points: " + points);
                     }
                     break;
                 case 2: // back
                     if (oStack.isEmpty())
-                        System.out.println("No previous question!");
+                        FileLogger.log("No previous question!");
                     else
                         index = oStack.pop();
                     break;
@@ -588,37 +602,37 @@ public class QuizzerGame {
                         oStack.push(index);
                         index++;
                     } else
-                        System.out.println("You are at the last question.");
+                        FileLogger.log("You are at the last question.");
                     break;
                 case 4: // exit
                     break;
                 default:
-                    System.out.println("Invalid choice!");
+                    FileLogger.log("Invalid choice!");
             }
 
         } while (choice != 4);
 
         // summary
-        System.out.println("\n========== QUIZ OVER ==========");
-        System.out.println("Player: " + playerName);
-        System.out.println("Final Score: " + points + "/" + shuffled.size());
-        System.out.println("--------------------------------");
+        FileLogger.log("\n========== QUIZ OVER ==========");
+        FileLogger.log("Player: " + playerName);
+        FileLogger.log("Final Score: " + points + "/" + shuffled.size());
+        FileLogger.log("--------------------------------");
         for (int i = 0; i < shuffled.size(); i++) {
             String q = shuffled.get(i).split("\\|")[0];
             if (!answered[i])
-                System.out.println("Q" + (i + 1) + ": Not answered - " + q);
+                FileLogger.log("Q" + (i + 1) + ": Not answered - " + q);
             else if (correct[i])
-                System.out.println("Q" + (i + 1) + ": Correct - " + q);
+                FileLogger.log("Q" + (i + 1) + ": Correct - " + q);
             else
-                System.out.println("Q" + (i + 1) + ": Wrong - " + q);
+                FileLogger.log("Q" + (i + 1) + ": Wrong - " + q);
         }
-        System.out.println("================================");
+        FileLogger.log("================================");
 
         // update score
         int oldScore = Integer.parseInt(playerParts[1]);
         players.set(playerIndex, playerName + "|" + (oldScore + points));
         savePlayers();
-        System.out.println("Score saved!");
+        FileLogger.log("Score saved!");
     }
 
     public static int countAnswered(boolean[] answered) {

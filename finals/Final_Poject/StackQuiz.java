@@ -34,9 +34,9 @@ public class StackQuiz {
             FileLogger.log(qs[index]);
             if (answered[index]) {
                 if (correct[index])
-                    FileLogger.log("You got it correctly here!");
+                    FileLogger.log("Correct! Yis galing!");
                 else if (!(correct[index]))
-                    FileLogger.log("You got this wrong!");
+                    FileLogger.log("Engk...wrong!");
             }
             FileLogger.log("[1] Answer  [2] Back  [3] Next  [4] Exit\n");
             System.out.print("Choice: ");

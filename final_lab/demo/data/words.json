@@ -1,0 +1,12 @@
+[
+  {"real": "Pizza", "decoy": "Burger"},
+  {"real": "Cat", "decoy": "Dog"},
+  {"real": "Guitar", "decoy": "Violin"},
+  {"real": "Ocean", "decoy": "River"},
+  {"real": "Winter", "decoy": "Autumn"},
+  {"real": "Hospital", "decoy": "Clinic"},
+  {"real": "Coffee", "decoy": "Tea"},
+  {"real": "Airplane", "decoy": "Helicopter"},
+  {"real": "Basketball", "decoy": "Volleyball"},
+  {"real": "Movie", "decoy": "Series"}
+]

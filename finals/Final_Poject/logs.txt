@@ -533,3 +533,344 @@ Welcome to Quiz Bee Game Menu!
 Choice: 3
 Thank you for playing!
 Terminating program...
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 4
+
+-------------------------------------
+Question # 1 | Answered: 0/10
+What is the largest organ in our body?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: skin
+You are correct!
+Points: 1
+
+-------------------------------------
+Question # 1 | Answered: 1/10
+What is the largest organ in our body?
+You got it correctly here!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 2 | Answered: 1/10
+What is the first book in the Philippines?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Invalid input! Enter another.
+
+-------------------------------------
+Question # 2 | Answered: 1/10
+What is the first book in the Philippines?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: d
+Oh no! You got it wrong...
+Points: 1
+
+-------------------------------------
+Question # 2 | Answered: 2/10
+What is the first book in the Philippines?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 3 | Answered: 2/10
+What is 5432 + 2367?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 2
+
+-------------------------------------
+Question # 2 | Answered: 2/10
+What is the first book in the Philippines?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 3 | Answered: 2/10
+What is 5432 + 2367?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Invalid input! Enter another.
+
+-------------------------------------
+Question # 3 | Answered: 2/10
+What is 5432 + 2367?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: we
+Oh no! You got it wrong...
+Points: 1
+
+-------------------------------------
+Question # 3 | Answered: 3/10
+What is 5432 + 2367?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 4
+
+========== QUIZ OVER ==========
+Final Score: 1/10
+--------------------------------
+Q1: Correct
+Q2: Wrong (Answer: Doctrina Cristiana)
+Q3: Wrong (Answer: 7799)
+Q4: Not answered
+Q5: Not answered
+Q6: Not answered
+Q7: Not answered
+Q8: Not answered
+Q9: Not answered
+Q10: Not answered
+================================
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 5
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 2
+
+Cannot start the quiz bee. Register first!
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 1
+Enter your name: LOis
+
+Welcome to Quiz Bee LOis!
+You may now proceed to menu 2.
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 2
+--- Starting the Quiz! ---
+
+Question 1: What is the capital of Australia?
+A. Sydney
+B. Melbourne
+C. Canberra
+D. Brisbane
+Your Answer: 232
+Wrong. The correct answer was: C
+
+Question 2: Who painted the Mona Lisa?
+A. Michelangelo
+B. Vincent van Gogh
+C. Leonardo da Vinci
+D. Pablo Picasso
+Your Answer: 3
+Wrong. The correct answer was: C
+
+Question 3: Which planet is known as the Red Planet?
+A. Mars
+B. Jupiter
+C. Saturn
+D. Venus
+Your Answer: 23
+Wrong. The correct answer was: A
+
+Question 4: In which year did World War II end?
+A. 1942
+B. 1945
+C. 1950
+D. 1939
+Your Answer: 22
+Wrong. The correct answer was: B
+
+Question 5: What is the chemical symbol for gold?
+A. Au
+B. Ag
+C. Go
+D. Gd
+Your Answer: 4
+Wrong. The correct answer was: A
+
+Question 6: What is the tallest mountain in the world?
+A. Mount Kilimanjaro
+B. Mount Fuji
+C. Mount Everest
+D. K2
+Your Answer: 343
+Wrong. The correct answer was: C
+
+Question 7: Who wrote Romeo and Juliet?
+A. Charles Dickens
+B. William Shakespeare
+C. Jane Austen
+D. George Orwell
+Your Answer: 242
+Wrong. The correct answer was: B
+
+Question 8: Which ocean is the largest?
+A. Atlantic
+B. Indian
+C. Arctic
+D. Pacific
+Your Answer: 3
+Wrong. The correct answer was: D
+
+Question 9: What’s the smallest prime number?
+A. 1
+B. 2
+C. 3
+D. 5
+Your Answer: 
+Wrong. The correct answer was: B
+
+Question 10: What gas do plants absorb from the atmosphere?
+A. Oxygen
+B. Nitrogen
+C. Carbon dioxide
+D. Helium
+Your Answer: 2
+Wrong. The correct answer was: C
+
+Question 11: This is the largest planet in our solar system.
+Your Answer: 24
+Wrong. The correct answer was: Jupiter
+
+Question 12: This scientist developed the theory of general relativity.
+Your Answer: 
+Wrong. The correct answer was: Albert Einstein
+
+Question 13: This is the process by which plants make their own food using sunlight.
+Your Answer: 4e
+Wrong. The correct answer was: Photosynthesis
+
+Question 14: This organ pumps blood throughout the human body.
+Your Answer: 
+Wrong. The correct answer was: Heart
+
+Question 15: This is the chemical symbol for water.
+Your Answer: erw
+Wrong. The correct answer was: H2O
+
+Question 16: This country is home to the Great Wall, one of the longest structures ever built.
+Your Answer: r
+Wrong. The correct answer was: China
+
+Question 17: This is the name of the force that pulls objects toward the Earth.
+Your Answer: wr
+Wrong. The correct answer was: Gravity
+
+Question 18: Who is the 7th President of the Philippines?
+Your Answer: w
+Wrong. The correct answer was: Ramon Magsaysay
+
+Question 19: This is the powerhouse of the cell.
+Your Answer: rwr
+Wrong. The correct answer was: Mitochondria
+
+Question 20: The angle of earth's axis
+Your Answer: w
+Wrong. The correct answer was: 23.5
+
+Question 21: The Earth revolves around the ______________.
+Your Answer: rwe
+Wrong. The correct answer was: Sun
+
+Question 22: Water freezes at ______ degrees Celsius.
+Your Answer: rw
+Wrong. The correct answer was: 0
+
+Question 23: The ______________ is the largest mammal on Earth.
+Your Answer: rw
+Wrong. The correct answer was: Blue Whale
+
+Question 24: Humans have ______ chromosomes in each body cell.
+Your Answer: er
+Wrong. The correct answer was: 46
+
+Question 25: The process of a caterpillar transforming into a butterfly is called ______________.
+Your Answer: wr
+Wrong. The correct answer was: Metamorphosis
+
+Question 26: The speed of light is approximately ______ kilometers per second.
+Your Answer: wer
+Wrong. The correct answer was: 300000
+
+Question 27: The chemical symbol for silver is ______.
+Your Answer: we
+Wrong. The correct answer was: Ag
+
+Question 28: The chemical symbol for copper is ______.
+Your Answer: r
+Wrong. The correct answer was: Cu
+
+Question 29: A ______________ is a word that describes or modifies a noun.
+Your Answer: r
+Wrong. The correct answer was: Adjective
+
+Question 30: The ______________ is the part of the plant responsible for absorbing water and nutrients from the soil.
+Your Answer: 
+Wrong. The correct answer was: Root
+
+========== QUIZ OVER ==========
+Final score: 0/30
+
+Welcome to Quiz Bee Game Menu!
+[1] Player Registration
+[2] Play
+[3] Exit
+
+Choice: 3
+Thank you for playing!
+Terminating program...

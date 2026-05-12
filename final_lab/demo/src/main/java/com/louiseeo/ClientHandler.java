@@ -5,6 +5,8 @@ import java.net.Socket;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+import com.louiseeo.model.Player;
+
 /**
  * Handles communication between the server and a single client.
  * Each client runs in its own thread.
@@ -14,6 +16,11 @@ public class ClientHandler implements Runnable {
     private PrintWriter out;
     private BufferedReader in;
     private String clientName;
+    private Player player;
+
+    public Player getPlayer() {
+        return player;
+    }
 
     public ClientHandler(Socket socket) {
         this.socket = socket;

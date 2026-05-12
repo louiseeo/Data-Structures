@@ -17,6 +17,10 @@ public abstract class Player {
         return word;
     }
 
+    public void setWord(String word) {
+        this.word = word;
+    }
+
     public abstract String getRole();
 
-} 
+}

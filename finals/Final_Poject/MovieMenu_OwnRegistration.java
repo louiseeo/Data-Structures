@@ -10,6 +10,7 @@ public class MovieMenu_OwnRegistration {
     public static void main(String[] args) {
         int choice = 0;
 
+        movie.clear(); // clear to prevent duplication
         loadMovies(); // call the method to load movies to the array list
 
         do {

@@ -11,7 +11,8 @@ public class QuizBeeMenu {
     public static void main(String[] args) {
         int choice = 0;
         boolean isPlayerRegistered = false;
-
+        
+        quiz.clear();
         loadQuestions();
         do {
             FileLogger.log("""
@@ -44,7 +45,6 @@ public class QuizBeeMenu {
                 case 3:
                     FileLogger.log("Thank you for playing!");
                     FileLogger.log("Terminating program...");
-                    System.exit(0);
                     break;
                 default:
                     FileLogger.log("Invalid choice! Pick another one.");
@@ -57,7 +57,11 @@ public class QuizBeeMenu {
     // Player Register
     public static void playerRegister() {
         System.out.print("Enter your name: ");
-        String name = sc.nextLine();
+        String name = sc.nextLine().trim();
+        if (name.isEmpty()) {
+            FileLogger.log("Name cannot be empty!");
+            return;
+        }
         FileLogger.logAnswer("Enter your name: " + name);
         FileLogger.log("\nWelcome to Quiz Bee " + name + "!");
         FileLogger.log("You may now proceed to menu 2.");

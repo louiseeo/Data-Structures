@@ -52,6 +52,7 @@ public class MainMenu {
                     break;
                 case 6:
                     QuizzerGame.main(args);
+                    break;
                 case 0:
                     FileLogger.log("Thank you for using EFM Enterprise Systems! Have a good day!");
                     FileLogger.log("Terminating program...");

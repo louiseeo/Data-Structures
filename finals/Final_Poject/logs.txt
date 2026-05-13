@@ -1,5 +1,5 @@
 
-=================================
+====================================
 Welcome to EFM Enterprise Systems
 We've got it all for you!
 
@@ -11,74 +11,24 @@ Please choose one of the following:
 5. EFM Quiz Bee
 6. EFM Quizzer Game
 0. Exit
-Choice: 5
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-Invalid input! Enter another.
-
-
-=================================
-Welcome to EFM Enterprise Systems
-We've got it all for you!
-
-Please choose one of the following:
-1. EFM Grocery ShopperMart POS
-2. EFM Movie Rental Registration
-3. EFM Movie Registration
-4. EFM Stack Quiz
-5. EFM Quiz Bee
-6. EFM Quizzer Game
-0. Exit
-Choice: 5
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Invalid input! Enter another.
-
-
-=================================
-Welcome to EFM Enterprise Systems
-We've got it all for you!
-
-Please choose one of the following:
-1. EFM Grocery ShopperMart POS
-2. EFM Movie Rental Registration
-3. EFM Movie Registration
-4. EFM Stack Quiz
-5. EFM Quiz Bee
-6. EFM Quizzer Game
-0. Exit
-Choice: 5
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
 Choice: 1
-Enter your name: loi
 
-Welcome to Quiz Bee loi!
-You may now proceed to menu 2.
+=========================
+Welcome to EFM Grocery!
+Input product name: Chippy
+Price: 12.0
+Quantity: 2.0
+Total: 24.0
+Another product Y/N? n
+Bill: 24.0
+Payment: 50.0
+Change: 26.0
+Thank you for shopping!
 
+Another customer Y/N? n
+Grocery program is terminating...
 
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Invalid input! Enter another.
-
-
-=================================
+====================================
 Welcome to EFM Enterprise Systems
 We've got it all for you!
 
@@ -90,27 +40,44 @@ Please choose one of the following:
 5. EFM Quiz Bee
 6. EFM Quizzer Game
 0. Exit
-Choice: 5
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
 Choice: 2
 
-Cannot start the quiz bee. Register first!
+Registration
+1. DVD
+2. VCD
+3. Tape
+Choice: 1
+Type: DVD
+Input title: Wrong Turn
 
+1. Horror
+2. Scifi
+3. Drama
+4. Comedy
+5. Cartoons
+Category: 1
+Minutes: 120
+Setting: forest
 
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
+1. Rental
+2. Sales
+Transaction: 2
+Price: 125
+Register another? (Y/N) n
 
-Invalid input! Enter another.
+REPORTS
+For rent: 0
+For sale: 1
+VCD Total: 0
+DVD Total: 1
+Tape Total: 0
+Horror Movies: 1
+Scifi Movies: 0
+Drama Movies: 0
+Comedy Movies: 0
+Catoons: 0
 
-
-=================================
+====================================
 Welcome to EFM Enterprise Systems
 We've got it all for you!
 
@@ -122,417 +89,153 @@ Please choose one of the following:
 5. EFM Quiz Bee
 6. EFM Quizzer Game
 0. Exit
-Choice: 5
+Choice: 3
 
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Choice: 2
-
-Cannot start the quiz bee. Register first!
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
 
 Choice: 1
-Enter your name: lo
+Enter title: Girl, Boy, Bakla, Tomboy
+Enter year released: 2013
+Enter genre: Comedy/Drama
+Enter duration(e.g., 2h 30m): 1h 43m
+Enter name of director: Wenn V. Deramas
 
-Welcome to Quiz Bee lo!
-You may now proceed to menu 2.
+Movie successfully added!
 
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Choice: 2
---- Starting the Quiz! ---
-
-Question 1: What is the capital of Australia?
-A. Sydney
-B. Melbourne
-C. Canberra
-D. Brisbane
-Your Answer: a
-Wrong. The correct answer was: C
-
-Question 2: Who painted the Mona Lisa?
-A. Michelangelo
-B. Vincent van Gogh
-C. Leonardo da Vinci
-D. Pablo Picasso
-Your Answer: c
-Correct!
-
-Question 3: Which planet is known as the Red Planet?
-A. Mars
-B. Jupiter
-C. Saturn
-D. Venus
-Your Answer: q
-Wrong. The correct answer was: A
-
-Question 4: In which year did World War II end?
-A. 1942
-B. 1945
-C. 1950
-D. 1939
-Your Answer: w
-Wrong. The correct answer was: B
-
-Question 5: What is the chemical symbol for gold?
-A. Au
-B. Ag
-C. Go
-D. Gd
-Your Answer: w
-Wrong. The correct answer was: A
-
-Question 6: What is the tallest mountain in the world?
-A. Mount Kilimanjaro
-B. Mount Fuji
-C. Mount Everest
-D. K2
-Your Answer: w
-Wrong. The correct answer was: C
-
-Question 7: Who wrote Romeo and Juliet?
-A. Charles Dickens
-B. William Shakespeare
-C. Jane Austen
-D. George Orwell
-Your Answer: w
-Wrong. The correct answer was: B
-
-Question 8: Which ocean is the largest?
-A. Atlantic
-B. Indian
-C. Arctic
-D. Pacific
-Your Answer: w
-Wrong. The correct answer was: D
-
-Question 9: What’s the smallest prime number?
-A. 1
-B. 2
-C. 3
-D. 5
-Your Answer: w
-Wrong. The correct answer was: B
-
-Question 10: What gas do plants absorb from the atmosphere?
-A. Oxygen
-B. Nitrogen
-C. Carbon dioxide
-D. Helium
-Your Answer: w
-Wrong. The correct answer was: C
-
-Question 11: This is the largest planet in our solar system.
-Your Answer: w
-Wrong. The correct answer was: Jupiter
-
-Question 12: This scientist developed the theory of general relativity.
-Your Answer: ww
-Wrong. The correct answer was: Albert Einstein
-
-Question 13: This is the process by which plants make their own food using sunlight.
-Your Answer: w
-Wrong. The correct answer was: Photosynthesis
-
-Question 14: This organ pumps blood throughout the human body.
-Your Answer: w
-Wrong. The correct answer was: Heart
-
-Question 15: This is the chemical symbol for water.
-Your Answer: w
-Wrong. The correct answer was: H2O
-
-Question 16: This country is home to the Great Wall, one of the longest structures ever built.
-Your Answer: w
-Wrong. The correct answer was: China
-
-Question 17: This is the name of the force that pulls objects toward the Earth.
-Your Answer: w
-Wrong. The correct answer was: Gravity
-
-Question 18: Who is the 7th President of the Philippines?
-Your Answer: w
-Wrong. The correct answer was: Ramon Magsaysay
-
-Question 19: This is the powerhouse of the cell.
-Your Answer: w
-Wrong. The correct answer was: Mitochondria
-
-Question 20: The angle of earth's axis
-Your Answer: w
-Wrong. The correct answer was: 23.5
-
-Question 21: The Earth revolves around the ______________.
-Your Answer: w
-Wrong. The correct answer was: Sun
-
-Question 22: Water freezes at ______ degrees Celsius.
-Your Answer: w
-Wrong. The correct answer was: 0
-
-Question 23: The ______________ is the largest mammal on Earth.
-Your Answer: w
-Wrong. The correct answer was: Blue Whale
-
-Question 24: Humans have ______ chromosomes in each body cell.
-Your Answer: w
-Wrong. The correct answer was: 46
-
-Question 25: The process of a caterpillar transforming into a butterfly is called ______________.
-Your Answer: w
-Wrong. The correct answer was: Metamorphosis
-
-Question 26: The speed of light is approximately ______ kilometers per second.
-Your Answer: w
-Wrong. The correct answer was: 300000
-
-Question 27: The chemical symbol for silver is ______.
-Your Answer: w
-Wrong. The correct answer was: Ag
-
-Question 28: The chemical symbol for copper is ______.
-Your Answer: w
-Wrong. The correct answer was: Cu
-
-Question 29: A ______________ is a word that describes or modifies a noun.
-Your Answer: w
-Wrong. The correct answer was: Adjective
-
-Question 30: The ______________ is the part of the plant responsible for absorbing water and nutrients from the soil.
-Your Answer: w
-Wrong. The correct answer was: Root
-
-========== QUIZ OVER ==========
-Final score: 1/30
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
 
 Choice: 2
---- Starting the Quiz! ---
+Available movies: 14
+Enter movie number: 3
 
-Question 1: What is the capital of Australia?
-A. Sydney
-B. Melbourne
-C. Canberra
-D. Brisbane
-Your Answer: w
-Wrong. The correct answer was: C
+---- Movie Found ----
+Title: The Cat Returns
+Year : 2002
+Genre: Adventure/Comedy
+Duration: 1h 14m
+Director: Hiroyhuki Morita
 
-Question 2: Who painted the Mona Lisa?
-A. Michelangelo
-B. Vincent van Gogh
-C. Leonardo da Vinci
-D. Pablo Picasso
-Your Answer: w
-Wrong. The correct answer was: C
-
-Question 3: Which planet is known as the Red Planet?
-A. Mars
-B. Jupiter
-C. Saturn
-D. Venus
-Your Answer: w
-Wrong. The correct answer was: A
-
-Question 4: In which year did World War II end?
-A. 1942
-B. 1945
-C. 1950
-D. 1939
-Your Answer: w
-Wrong. The correct answer was: B
-
-Question 5: What is the chemical symbol for gold?
-A. Au
-B. Ag
-C. Go
-D. Gd
-Your Answer: ww
-Wrong. The correct answer was: A
-
-Question 6: What is the tallest mountain in the world?
-A. Mount Kilimanjaro
-B. Mount Fuji
-C. Mount Everest
-D. K2
-Your Answer: w
-Wrong. The correct answer was: C
-
-Question 7: Who wrote Romeo and Juliet?
-A. Charles Dickens
-B. William Shakespeare
-C. Jane Austen
-D. George Orwell
-Your Answer: w
-Wrong. The correct answer was: B
-
-Question 8: Which ocean is the largest?
-A. Atlantic
-B. Indian
-C. Arctic
-D. Pacific
-Your Answer: w
-Wrong. The correct answer was: D
-
-Question 9: What’s the smallest prime number?
-A. 1
-B. 2
-C. 3
-D. 5
-Your Answer: w
-Wrong. The correct answer was: B
-
-Question 10: What gas do plants absorb from the atmosphere?
-A. Oxygen
-B. Nitrogen
-C. Carbon dioxide
-D. Helium
-Your Answer: ww
-Wrong. The correct answer was: C
-
-Question 11: This is the largest planet in our solar system.
-Your Answer: w
-Wrong. The correct answer was: Jupiter
-
-Question 12: This scientist developed the theory of general relativity.
-Your Answer: w
-Wrong. The correct answer was: Albert Einstein
-
-Question 13: This is the process by which plants make their own food using sunlight.
-Your Answer: ww
-Wrong. The correct answer was: Photosynthesis
-
-Question 14: This organ pumps blood throughout the human body.
-Your Answer: w
-Wrong. The correct answer was: Heart
-
-Question 15: This is the chemical symbol for water.
-Your Answer: w
-Wrong. The correct answer was: H2O
-
-Question 16: This country is home to the Great Wall, one of the longest structures ever built.
-Your Answer: w
-Wrong. The correct answer was: China
-
-Question 17: This is the name of the force that pulls objects toward the Earth.
-Your Answer: ww
-Wrong. The correct answer was: Gravity
-
-Question 18: Who is the 7th President of the Philippines?
-Your Answer: w
-Wrong. The correct answer was: Ramon Magsaysay
-
-Question 19: This is the powerhouse of the cell.
-Your Answer: w
-Wrong. The correct answer was: Mitochondria
-
-Question 20: The angle of earth's axis
-Your Answer: w
-Wrong. The correct answer was: 23.5
-
-Question 21: The Earth revolves around the ______________.
-Your Answer: ww
-Wrong. The correct answer was: Sun
-
-Question 22: Water freezes at ______ degrees Celsius.
-Your Answer: w
-Wrong. The correct answer was: 0
-
-Question 23: The ______________ is the largest mammal on Earth.
-Your Answer: w
-Wrong. The correct answer was: Blue Whale
-
-Question 24: Humans have ______ chromosomes in each body cell.
-Your Answer: w
-Wrong. The correct answer was: 46
-
-Question 25: The process of a caterpillar transforming into a butterfly is called ______________.
-Your Answer: ww
-Wrong. The correct answer was: Metamorphosis
-
-Question 26: The speed of light is approximately ______ kilometers per second.
-Your Answer: w
-Wrong. The correct answer was: 300000
-
-Question 27: The chemical symbol for silver is ______.
-Your Answer: w
-Wrong. The correct answer was: Ag
-
-Question 28: The chemical symbol for copper is ______.
-Your Answer: w
-Wrong. The correct answer was: Cu
-
-Question 29: A ______________ is a word that describes or modifies a noun.
-Your Answer: ww
-Wrong. The correct answer was: Adjective
-
-Question 30: The ______________ is the part of the plant responsible for absorbing water and nutrients from the soil.
-Your Answer: w
-Wrong. The correct answer was: Root
-
-========== QUIZ OVER ==========
-Final score: 0/30
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Invalid input! Enter another.
-
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Choice: 232
-Invalid choice! Pick another one.
-
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Choice: 1
-Enter your name: 
-
-Welcome to Quiz Bee !
-You may now proceed to menu 2.
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
-Choice: 1
-Enter your name: loi
-
-Welcome to Quiz Bee loi!
-You may now proceed to menu 2.
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
 
 Choice: 3
-Thank you for playing!
-Terminating program...
+Available movies: 14
+Enter movie number: 14
+
+----------Movie Details----------
+Title: Girl, Boy, Bakla, Tomboy
+Year : 2013
+Genre: Comedy/Drama
+Duration: 1h 43m
+Director: Wenn V. Deramas
+Do you want to edit this movie? (y/n): n
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 5
+Choose the order of sorting:
+[1] Ascending
+[2] Descending
+
+Choice: 1
+
+Movie sorted successfully!
+
+============================================== MOVIE LIST ==============================================
++----+------------------------------+------+-------------------------+----------+----------------------+
+| #  | Title                        | Year | Genre                   | Duration | Director             |
++----+------------------------------+------+-------------------------+----------+----------------------+
+| 1  | Avatar: The Way of Water     | 2022 | Sci-fi/Action/Fantasy   | 3h 12m   | James Cameron        |
+| 2  | Ballerina                    | 2023 | Action/Thriller         | 1h 33m   | Lee Chung-hyeon      |
+| 3  | Barbie                       | 2023 | Comedy/Fantasy          | 1h 54m   | Greta Gerwig         |
+| 4  | Black Panther                | 2018 | Action/Sci-fi           | 2h 15m   | Ryan Coogler         |
+| 5  | Death Whisperer              | 2023 | Horror/Thriller         | 2h 1m    | Taweewat Wantha      |
+| 6  | Girl, Boy, Bakla, Tomboy     | 2013 | Comedy/Drama            | 1h 43m   | Wenn V. Deramas      |
+| 7  | Hacksaw Ridge                | 2017 | War/Drama               | 2h 19m   | Mel Gibson           |
+| 8  | Hotel Mumbai                 | 2018 | Thriller/Action         | 2h 3m    | Anthony Maras        |
+| 9  | Lady Bird                    | 2017 | Comedy/Drama            | 1h 25m   | Greta Gerwig         |
+| 10 | Saving Face                  | 2004 | Romance/Comedy          | 1h 37m   | Alice Wu             |
+| 11 | Taken                        | 2008 | Action/Crime            | 1h 33m   | Pierre Morel         |
+| 12 | The Cat Returns              | 2002 | Adventure/Comedy        | 1h 14m   | Hiroyhuki Morita     |
+| 13 | The Maid                     | 2020 | Horror/Mystery          | 1h 42m   | Lee Thongkham        |
+| 14 | White Chicks                 | 2004 | Comedy/Crime            | 1h 49m   | Keenen Ivory Wayans  |
++----+------------------------------+------+-------------------------+----------+----------------------+
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 6
+============================================== MOVIE LIST ==============================================
++----+------------------------------+------+-------------------------+----------+----------------------+
+| #  | Title                        | Year | Genre                   | Duration | Director             |
++----+------------------------------+------+-------------------------+----------+----------------------+
+| 1  | Avatar: The Way of Water     | 2022 | Sci-fi/Action/Fantasy   | 3h 12m   | James Cameron        |
+| 2  | Ballerina                    | 2023 | Action/Thriller         | 1h 33m   | Lee Chung-hyeon      |
+| 3  | Barbie                       | 2023 | Comedy/Fantasy          | 1h 54m   | Greta Gerwig         |
+| 4  | Black Panther                | 2018 | Action/Sci-fi           | 2h 15m   | Ryan Coogler         |
+| 5  | Death Whisperer              | 2023 | Horror/Thriller         | 2h 1m    | Taweewat Wantha      |
+| 6  | Girl, Boy, Bakla, Tomboy     | 2013 | Comedy/Drama            | 1h 43m   | Wenn V. Deramas      |
+| 7  | Hacksaw Ridge                | 2017 | War/Drama               | 2h 19m   | Mel Gibson           |
+| 8  | Hotel Mumbai                 | 2018 | Thriller/Action         | 2h 3m    | Anthony Maras        |
+| 9  | Lady Bird                    | 2017 | Comedy/Drama            | 1h 25m   | Greta Gerwig         |
+| 10 | Saving Face                  | 2004 | Romance/Comedy          | 1h 37m   | Alice Wu             |
+| 11 | Taken                        | 2008 | Action/Crime            | 1h 33m   | Pierre Morel         |
+| 12 | The Cat Returns              | 2002 | Adventure/Comedy        | 1h 14m   | Hiroyhuki Morita     |
+| 13 | The Maid                     | 2020 | Horror/Mystery          | 1h 42m   | Lee Thongkham        |
+| 14 | White Chicks                 | 2004 | Comedy/Crime            | 1h 49m   | Keenen Ivory Wayans  |
++----+------------------------------+------+-------------------------+----------+----------------------+
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 0
+Thank you for using the Movie Registration System!
+Exiting program...
 
 ====================================
 Welcome to EFM Enterprise Systems
@@ -561,7 +264,7 @@ Points: 1
 -------------------------------------
 Question # 1 | Answered: 1/10
 What is the largest organ in our body?
-You got it correctly here!
+Correct! Yis galing!
 [1] Answer  [2] Back  [3] Next  [4] Exit
 
 Choice: 3
@@ -571,37 +274,15 @@ Question # 2 | Answered: 1/10
 What is the first book in the Philippines?
 [1] Answer  [2] Back  [3] Next  [4] Exit
 
-Invalid input! Enter another.
-
--------------------------------------
-Question # 2 | Answered: 1/10
-What is the first book in the Philippines?
-[1] Answer  [2] Back  [3] Next  [4] Exit
-
 Choice: 1
-Answer: d
+Answer: ?
 Oh no! You got it wrong...
 Points: 1
 
 -------------------------------------
 Question # 2 | Answered: 2/10
 What is the first book in the Philippines?
-You got this wrong!
-[1] Answer  [2] Back  [3] Next  [4] Exit
-
-Choice: 3
-
--------------------------------------
-Question # 3 | Answered: 2/10
-What is 5432 + 2367?
-[1] Answer  [2] Back  [3] Next  [4] Exit
-
-Choice: 2
-
--------------------------------------
-Question # 2 | Answered: 2/10
-What is the first book in the Philippines?
-You got this wrong!
+Engk...wrong!
 [1] Answer  [2] Back  [3] Next  [4] Exit
 
 Choice: 3
@@ -619,47 +300,197 @@ What is 5432 + 2367?
 [1] Answer  [2] Back  [3] Next  [4] Exit
 
 Choice: 1
-Answer: we
+Answer: 3432
 Oh no! You got it wrong...
 Points: 1
 
 -------------------------------------
 Question # 3 | Answered: 3/10
 What is 5432 + 2367?
-You got this wrong!
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 4 | Answered: 3/10
+Who is the first programmer in the world?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 2
+
+-------------------------------------
+Question # 3 | Answered: 3/10
+What is 5432 + 2367?
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 4 | Answered: 3/10
+Who is the first programmer in the world?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: Ada
+Oh no! You got it wrong...
+Points: 1
+
+-------------------------------------
+Question # 4 | Answered: 4/10
+Who is the first programmer in the world?
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 5 | Answered: 4/10
+What country colonized the philippines for over 300 years?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: spain
+You are correct!
+Points: 2
+
+-------------------------------------
+Question # 5 | Answered: 5/10
+What country colonized the philippines for over 300 years?
+Correct! Yis galing!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 6 | Answered: 5/10
+What do you call an animal with no backbone?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: invertebrate
+You are correct!
+Points: 3
+
+-------------------------------------
+Question # 6 | Answered: 6/10
+What do you call an animal with no backbone?
+Correct! Yis galing!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 7 | Answered: 6/10
+What is the structure of DNA?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: idk
+Oh no! You got it wrong...
+Points: 3
+
+-------------------------------------
+Question # 7 | Answered: 7/10
+What is the structure of DNA?
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 8 | Answered: 7/10
+What is the smallest prime number?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 2
+
+-------------------------------------
+Question # 7 | Answered: 7/10
+What is the structure of DNA?
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 8 | Answered: 7/10
+What is the smallest prime number?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: 2
+You are correct!
+Points: 4
+
+-------------------------------------
+Question # 8 | Answered: 8/10
+What is the smallest prime number?
+Correct! Yis galing!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 9 | Answered: 8/10
+What year did world war 2 end?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: 1944
+Oh no! You got it wrong...
+Points: 4
+
+-------------------------------------
+Question # 9 | Answered: 9/10
+What year did world war 2 end?
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+
+-------------------------------------
+Question # 10 | Answered: 9/10
+Who is the first president of the Philippines?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 1
+Answer: BBM
+Oh no! You got it wrong...
+Points: 4
+
+-------------------------------------
+Question # 10 | Answered: 10/10
+Who is the first president of the Philippines?
+Engk...wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+
+Choice: 3
+You are at the last question.
+
+-------------------------------------
+Question # 10 | Answered: 10/10
+Who is the first president of the Philippines?
+Engk...wrong!
 [1] Answer  [2] Back  [3] Next  [4] Exit
 
 Choice: 4
 
 ========== QUIZ OVER ==========
-Final Score: 1/10
+Final Score: 4/10
 --------------------------------
 Q1: Correct
 Q2: Wrong (Answer: Doctrina Cristiana)
 Q3: Wrong (Answer: 7799)
-Q4: Not answered
-Q5: Not answered
-Q6: Not answered
-Q7: Not answered
-Q8: Not answered
-Q9: Not answered
-Q10: Not answered
+Q4: Wrong (Answer: Ada Lovelace)
+Q5: Correct
+Q6: Correct
+Q7: Wrong (Answer: double-helix)
+Q8: Correct
+Q9: Wrong (Answer: 1945)
+Q10: Wrong (Answer: Emilio Aguinaldo)
 ================================
-
-====================================
-Welcome to EFM Enterprise Systems
-We've got it all for you!
-
-Please choose one of the following:
-1. EFM Grocery ShopperMart POS
-2. EFM Movie Rental Registration
-3. EFM Movie Registration
-4. EFM Stack Quiz
-5. EFM Quiz Bee
-6. EFM Quizzer Game
-0. Exit
-Invalid input! Enter another.
-
 
 ====================================
 Welcome to EFM Enterprise Systems
@@ -680,19 +511,10 @@ Welcome to Quiz Bee Game Menu!
 [2] Play
 [3] Exit
 
-Choice: 2
-
-Cannot start the quiz bee. Register first!
-
-Welcome to Quiz Bee Game Menu!
-[1] Player Registration
-[2] Play
-[3] Exit
-
 Choice: 1
-Enter your name: LOis
+Enter your name: LOuise
 
-Welcome to Quiz Bee LOis!
+Welcome to Quiz Bee LOuise!
 You may now proceed to menu 2.
 
 Welcome to Quiz Bee Game Menu!
@@ -708,7 +530,7 @@ A. Sydney
 B. Melbourne
 C. Canberra
 D. Brisbane
-Your Answer: 232
+Your Answer: a
 Wrong. The correct answer was: C
 
 Question 2: Who painted the Mona Lisa?
@@ -716,7 +538,7 @@ A. Michelangelo
 B. Vincent van Gogh
 C. Leonardo da Vinci
 D. Pablo Picasso
-Your Answer: 3
+Your Answer: b
 Wrong. The correct answer was: C
 
 Question 3: Which planet is known as the Red Planet?
@@ -724,7 +546,7 @@ A. Mars
 B. Jupiter
 C. Saturn
 D. Venus
-Your Answer: 23
+Your Answer: c
 Wrong. The correct answer was: A
 
 Question 4: In which year did World War II end?
@@ -732,7 +554,7 @@ A. 1942
 B. 1945
 C. 1950
 D. 1939
-Your Answer: 22
+Your Answer: d
 Wrong. The correct answer was: B
 
 Question 5: What is the chemical symbol for gold?
@@ -740,7 +562,7 @@ A. Au
 B. Ag
 C. Go
 D. Gd
-Your Answer: 4
+Your Answer: c
 Wrong. The correct answer was: A
 
 Question 6: What is the tallest mountain in the world?
@@ -748,7 +570,7 @@ A. Mount Kilimanjaro
 B. Mount Fuji
 C. Mount Everest
 D. K2
-Your Answer: 343
+Your Answer: d
 Wrong. The correct answer was: C
 
 Question 7: Who wrote Romeo and Juliet?
@@ -756,7 +578,7 @@ A. Charles Dickens
 B. William Shakespeare
 C. Jane Austen
 D. George Orwell
-Your Answer: 242
+Your Answer: a
 Wrong. The correct answer was: B
 
 Question 8: Which ocean is the largest?
@@ -764,15 +586,15 @@ A. Atlantic
 B. Indian
 C. Arctic
 D. Pacific
-Your Answer: 3
-Wrong. The correct answer was: D
+Your Answer: d
+Correct!
 
 Question 9: What’s the smallest prime number?
 A. 1
 B. 2
 C. 3
 D. 5
-Your Answer: 
+Your Answer: c
 Wrong. The correct answer was: B
 
 Question 10: What gas do plants absorb from the atmosphere?
@@ -780,91 +602,91 @@ A. Oxygen
 B. Nitrogen
 C. Carbon dioxide
 D. Helium
-Your Answer: 2
+Your Answer: d
 Wrong. The correct answer was: C
 
 Question 11: This is the largest planet in our solar system.
-Your Answer: 24
+Your Answer: b
 Wrong. The correct answer was: Jupiter
 
 Question 12: This scientist developed the theory of general relativity.
-Your Answer: 
+Your Answer: d
 Wrong. The correct answer was: Albert Einstein
 
 Question 13: This is the process by which plants make their own food using sunlight.
-Your Answer: 4e
+Your Answer: c
 Wrong. The correct answer was: Photosynthesis
 
 Question 14: This organ pumps blood throughout the human body.
-Your Answer: 
+Your Answer: d
 Wrong. The correct answer was: Heart
 
 Question 15: This is the chemical symbol for water.
-Your Answer: erw
+Your Answer: c
 Wrong. The correct answer was: H2O
 
 Question 16: This country is home to the Great Wall, one of the longest structures ever built.
-Your Answer: r
+Your Answer: d
 Wrong. The correct answer was: China
 
 Question 17: This is the name of the force that pulls objects toward the Earth.
-Your Answer: wr
+Your Answer: c
 Wrong. The correct answer was: Gravity
 
 Question 18: Who is the 7th President of the Philippines?
-Your Answer: w
+Your Answer: a
 Wrong. The correct answer was: Ramon Magsaysay
 
 Question 19: This is the powerhouse of the cell.
-Your Answer: rwr
+Your Answer: f
 Wrong. The correct answer was: Mitochondria
 
 Question 20: The angle of earth's axis
-Your Answer: w
+Your Answer: d
 Wrong. The correct answer was: 23.5
 
 Question 21: The Earth revolves around the ______________.
-Your Answer: rwe
+Your Answer: c
 Wrong. The correct answer was: Sun
 
 Question 22: Water freezes at ______ degrees Celsius.
-Your Answer: rw
+Your Answer: d
 Wrong. The correct answer was: 0
 
 Question 23: The ______________ is the largest mammal on Earth.
-Your Answer: rw
+Your Answer: a
 Wrong. The correct answer was: Blue Whale
 
 Question 24: Humans have ______ chromosomes in each body cell.
-Your Answer: er
+Your Answer: d
 Wrong. The correct answer was: 46
 
 Question 25: The process of a caterpillar transforming into a butterfly is called ______________.
-Your Answer: wr
+Your Answer: d
 Wrong. The correct answer was: Metamorphosis
 
 Question 26: The speed of light is approximately ______ kilometers per second.
-Your Answer: wer
+Your Answer: d
 Wrong. The correct answer was: 300000
 
 Question 27: The chemical symbol for silver is ______.
-Your Answer: we
+Your Answer: d
 Wrong. The correct answer was: Ag
 
 Question 28: The chemical symbol for copper is ______.
-Your Answer: r
-Wrong. The correct answer was: Cu
+Your Answer: CU
+Correct!
 
 Question 29: A ______________ is a word that describes or modifies a noun.
-Your Answer: r
+Your Answer: pronoun
 Wrong. The correct answer was: Adjective
 
 Question 30: The ______________ is the part of the plant responsible for absorbing water and nutrients from the soil.
-Your Answer: 
+Your Answer: chlorophyll
 Wrong. The correct answer was: Root
 
 ========== QUIZ OVER ==========
-Final score: 0/30
+Final score: 2/30
 
 Welcome to Quiz Bee Game Menu!
 [1] Player Registration
@@ -874,3 +696,627 @@ Welcome to Quiz Bee Game Menu!
 Choice: 3
 Thank you for playing!
 Terminating program...
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 6
+
+=============== WELCOME TO QUIZZER GAME ================
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 1
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 1
+Enter player name: Naty
+Player added successfully!
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 2
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] John
+[5] Panying
+[6] Naty
+Enter player number to edit: 4
+Enter new name (old: John): FLoyd
+Player updated successfully!
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 3
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] FLoyd
+[5] Panying
+[6] Naty
+Enter player number to delete: 6
+Are you sure you want to delete Naty? (y/n): y
+Player deleted successfully!
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 4
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] FLoyd
+[5] Panying
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 5
+Enter player name to search: floyd
+Found: [4] FLoyd
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 6
+
+---------- LEADERBOARD ----------
+[1] FLoyd - 6 pts
+[2] Love - 4 pts
+[3] Sonya - 1 pts
+[4] Emi - 1 pts
+[5] Panying - 0 pts
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 0
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 2
+
+------- QUESTION BANK -------
+[1] Add Question
+[2] Edit Question
+[3] Delete Question
+[4] List Questions
+[5] Search Question
+[0] Back
+
+Choice: 1
+Enter question: 2 + 3?
+Enter answer: 5
+Question added successfully!
+
+------- QUESTION BANK -------
+[1] Add Question
+[2] Edit Question
+[3] Delete Question
+[4] List Questions
+[5] Search Question
+[0] Back
+
+Choice: 3
+
+---------- QUESTIONS ----------
+[1] What does LIFO stand for?
+[2] What do you call the front element of a queue?
+[3] What is the process of adding an element to a stack?
+[4] What is the process of removing an element from a stack?
+[5] What is the process of removing an element from a queue?
+[6] What data structure is used in recursion?
+[7] What is an empty stack condition called?
+[8] What is 5 x 5?
+[9] What is 100 divided by 4?
+[10] What is the square root of 144?
+[11] What is 15% of 200?
+[12] What is the powerhouse of the cell?
+[13] What planet is closest to the sun?
+[14] What gas do plants absorb from the atmosphere?
+[15] What year did the Philippines gain independence from the US?
+[16] Who wrote the Philippine national anthem?
+[17] What is the national flower of the Philippines?
+[18] What is the largest ocean in the world?
+[19] What color is the sky on a clear day?
+[20] How many sides does a hexagon have?
+[21] What is 1 + 1?
+[22] 2 + 3?
+Enter question number to delete: 22
+Are you sure you want to delete this question? (y/n): y
+Question deleted successfully!
+
+------- QUESTION BANK -------
+[1] Add Question
+[2] Edit Question
+[3] Delete Question
+[4] List Questions
+[5] Search Question
+[0] Back
+
+Choice: 4
+
+---------- QUESTIONS ----------
+[1] What does LIFO stand for?
+[2] What do you call the front element of a queue?
+[3] What is the process of adding an element to a stack?
+[4] What is the process of removing an element from a stack?
+[5] What is the process of removing an element from a queue?
+[6] What data structure is used in recursion?
+[7] What is an empty stack condition called?
+[8] What is 5 x 5?
+[9] What is 100 divided by 4?
+[10] What is the square root of 144?
+[11] What is 15% of 200?
+[12] What is the powerhouse of the cell?
+[13] What planet is closest to the sun?
+[14] What gas do plants absorb from the atmosphere?
+[15] What year did the Philippines gain independence from the US?
+[16] Who wrote the Philippine national anthem?
+[17] What is the national flower of the Philippines?
+[18] What is the largest ocean in the world?
+[19] What color is the sky on a clear day?
+[20] How many sides does a hexagon have?
+[21] What is 1 + 1?
+
+------- QUESTION BANK -------
+[1] Add Question
+[2] Edit Question
+[3] Delete Question
+[4] List Questions
+[5] Search Question
+[0] Back
+
+Choice: 5
+Enter question to search: 1 + 1?
+Question not found.
+
+------- QUESTION BANK -------
+[1] Add Question
+[2] Edit Question
+[3] Delete Question
+[4] List Questions
+[5] Search Question
+[0] Back
+
+Choice: 0
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 3
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] FLoyd
+[5] Panying
+Enter player number: 0
+
+-------------------------------------
+Question # 1 | Answered: 0/21
+What color is the sky on a clear day?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 1
+Answer: swd
+Wrong! Answer was: Blue
+Points: 0
+
+-------------------------------------
+Question # 1 | Answered: 1/21
+What color is the sky on a clear day?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Invalid input!
+
+-------------------------------------
+Question # 1 | Answered: 1/21
+What color is the sky on a clear day?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Invalid input!
+
+-------------------------------------
+Question # 1 | Answered: 1/21
+What color is the sky on a clear day?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 2
+No previous question!
+
+-------------------------------------
+Question # 1 | Answered: 1/21
+What color is the sky on a clear day?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 2
+No previous question!
+
+-------------------------------------
+Question # 1 | Answered: 1/21
+What color is the sky on a clear day?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 2
+No previous question!
+
+-------------------------------------
+Question # 1 | Answered: 1/21
+What color is the sky on a clear day?
+You got this wrong!
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 2 | Answered: 1/21
+What does LIFO stand for?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 3 | Answered: 1/21
+What planet is closest to the sun?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 4 | Answered: 1/21
+What do you call the front element of a queue?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 5 | Answered: 1/21
+What is the powerhouse of the cell?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 6 | Answered: 1/21
+What is the largest ocean in the world?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 7 | Answered: 1/21
+What gas do plants absorb from the atmosphere?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 8 | Answered: 1/21
+What is the process of removing an element from a stack?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 9 | Answered: 1/21
+How many sides does a hexagon have?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 10 | Answered: 1/21
+What is an empty stack condition called?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 11 | Answered: 1/21
+What is 1 + 1?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 12 | Answered: 1/21
+What year did the Philippines gain independence from the US?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 13 | Answered: 1/21
+What is 5 x 5?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 3
+
+-------------------------------------
+Question # 14 | Answered: 1/21
+What is 100 divided by 4?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 34
+Invalid choice!
+
+-------------------------------------
+Question # 14 | Answered: 1/21
+What is 100 divided by 4?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 4
+
+========== QUIZ OVER ==========
+Player: Sonya
+Final Score: 0/21
+--------------------------------
+Q1: Wrong - What color is the sky on a clear day?
+Q2: Not answered - What does LIFO stand for?
+Q3: Not answered - What planet is closest to the sun?
+Q4: Not answered - What do you call the front element of a queue?
+Q5: Not answered - What is the powerhouse of the cell?
+Q6: Not answered - What is the largest ocean in the world?
+Q7: Not answered - What gas do plants absorb from the atmosphere?
+Q8: Not answered - What is the process of removing an element from a stack?
+Q9: Not answered - How many sides does a hexagon have?
+Q10: Not answered - What is an empty stack condition called?
+Q11: Not answered - What is 1 + 1?
+Q12: Not answered - What year did the Philippines gain independence from the US?
+Q13: Not answered - What is 5 x 5?
+Q14: Not answered - What is 100 divided by 4?
+Q15: Not answered - What is the process of removing an element from a queue?
+Q16: Not answered - What is the process of adding an element to a stack?
+Q17: Not answered - What data structure is used in recursion?
+Q18: Not answered - What is 15% of 200?
+Q19: Not answered - Who wrote the Philippine national anthem?
+Q20: Not answered - What is the national flower of the Philippines?
+Q21: Not answered - What is the square root of 144?
+================================
+Score saved!
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 4
+
+Saving data and exiting... Goodbye!
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 6
+
+=============== WELCOME TO QUIZZER GAME ================
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 4
+
+Saving data and exiting... Goodbye!
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 0
+Thank you for using EFM Enterprise Systems! Have a good day!
+Terminating program...
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 6
+
+=============== WELCOME TO QUIZZER GAME ================
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 1
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 4
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] FLoyd
+[5] Panying
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 0
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 4
+
+Saving data and exiting... Goodbye!
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Stack Quiz
+5. EFM Quiz Bee
+6. EFM Quizzer Game
+0. Exit
+Choice: 6
+
+=============== WELCOME TO QUIZZER GAME ================
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 1
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+
+Choice: 4
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] FLoyd
+[5] Panying
+[6] Sonya
+[7] Emi
+[8] Love
+[9] FLoyd
+[10] Panying
+
+------- PLAYER REGISTRATION -------
+[1] Add Player
+[2] Edit Player
+[3] Delete Player
+[4] List Players
+[5] Search Player
+[6] Leaderboard
+[0] Back
+

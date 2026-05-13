@@ -1,4 +1,3 @@
-import java.io.File;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -27,6 +26,11 @@ public class StackQuiz {
             "double-helix", "2", "1945", "Emilio Aguinaldo" };
 
     public static void main(String[] args) {
+        // reset state if coming back from main menu
+        points = 0;
+        index = 0;
+        oStack.clear();
+        answered = new boolean[10];
         int choice = -1;
         do {
             FileLogger.log("\n-------------------------------------");

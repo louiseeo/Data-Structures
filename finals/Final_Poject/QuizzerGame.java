@@ -23,6 +23,8 @@ public class QuizzerGame {
     static List<String> questions = new ArrayList<>();
 
     public static void main(String[] args) {
+        players.clear(); // clear both to prevent duplicates
+        questions.clear(); 
         loadPlayers(); // load the players
         loadQuestions();
 
@@ -60,7 +62,6 @@ public class QuizzerGame {
             }
         }
 
-        sc.close();
     }
 
     public static void playerMenu() {
@@ -515,7 +516,7 @@ public class QuizzerGame {
         // pick a player
         listPlayers();
         System.out.print("Enter player number: ");
-      
+
         int playerIndex;
         try {
             playerIndex = Integer.parseInt(sc.nextLine().trim()) - 1;

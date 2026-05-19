@@ -10,6 +10,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.louiseeo.model.Accounts;
+import com.louiseeo.model.Player;
 
 /**
  * Handles account registration and login validation.
@@ -79,21 +80,23 @@ public class AccountService {
      * @param password : entered password
      * @return true if login is successful
      */
-    public static boolean login(
-            String username,
-            String password) {
-
-        List<Accounts> users = loadUsers();
-
-        for (Accounts user : users) {
-            if (user.getUsername().equals(username)
-                    &&
-                    user.getPassword().equals(password)) {
-                return true;
+    public static String login(String username, String password) {
+        // check if already logged in
+        for (Player p : GameService.getPlayers()) {
+            if (p.getUsername().equalsIgnoreCase(username)) {
+                return "already_logged_in";
             }
         }
 
-        return false;
+        List<Accounts> users = loadUsers();
+        for (Accounts user : users) {
+            if (user.getUsername().equals(username)
+                    && user.getPassword().equals(password)) {
+                return "success";
+            }
+        }
+
+        return "invalid";
     }
 
     /**

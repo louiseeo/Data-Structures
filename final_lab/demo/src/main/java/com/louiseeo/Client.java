@@ -28,22 +28,10 @@ public class Client {
                         if (msg.startsWith("|") || msg.startsWith("+")) {
                             System.out.println(msg);
                         } else {
-                            System.out.println("\n" + msg);
-                            if ((msg.contains("CHAT PHASE")) ||
-                                    (msg.startsWith("[")) ||
-                                    (msg.contains("wants")) ||
-                                    (msg.contains("need")) ||
-                                    (msg.contains("joined!")) ||
-                                    (msg.contains("ready!!")) ||
-                                    (msg.contains("Invalid")) ||
-                                    (msg.contains("cannot")) ||
-                                    (msg.contains("again?")) ||
-                                    (msg.contains("number")) ||
-                                    (msg.contains("username")) ||
-                                    (msg.contains("password")) ||
-                                    (msg.contains("Enter choice"))) {
-                                System.out.print("> ");
-                            }
+                            System.out.println(msg);
+                           
+                            
+                            
                         }
                     }
                     System.out.println("\n===== Server has shut down. =====");
@@ -66,6 +54,7 @@ public class Client {
 
                 if (!input.isEmpty()) {
                     out.println(input);
+                    System.out.println();
                 }
             }
 

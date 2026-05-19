@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-
 import com.louiseeo.ClientHandler;
 import com.louiseeo.enums.GamePhase;
 import com.louiseeo.model.Player;
@@ -22,8 +21,10 @@ import com.louiseeo.model.CitizenPlayer;
  * @author louiseeo
  */
 public class GameService {
+
     private static GamePhase currentPhase = GamePhase.LOBBY;
     private static WordPair currentWordPair;
+
     private static final List<Player> players = Collections.synchronizedList(new ArrayList<>());
     private static final Set<ClientHandler> readyPlayers = Collections.synchronizedSet(new HashSet<>());
 
@@ -42,21 +43,27 @@ public class GameService {
      * @param client : the client who typed ready
      */
     public static synchronized void handleReady(ClientHandler client) {
-
-        // already readied!!
         if (readyPlayers.contains(client)) {
-            client.sendMessage("----- You already typed ready!! -----");
+            client.sendMessage(UIService.error("You already typed ready!"));
             return;
         }
 
         if (getPlayers().size() < 3) {
-            client.sendMessage("----- Need at least 3 players to start!! -----");
+            client.sendMessage(
+                    UIService.error("Not enough players.") + "\n"
+                            + UIService.tip("At least 3 players are required.") + "\n"
+                            + UIService.divider());
             return;
         }
 
         readyPlayers.add(client);
-        ChatService.broadcastAll(client.getPlayer().getUsername() + " is ready!! (" + readyPlayers.size() + "/"
-                + getPlayers().size() + ")");
+        ChatService.broadcastAll(
+                UIService.system(
+                        client.getPlayer().getUsername()
+                                + " is ready.  ("
+                                + readyPlayers.size() + "/" + getPlayers().size() + ")")
+                        + "\n"
+                        + UIService.divider());
 
         if (readyPlayers.size() >= getPlayers().size()) {
             readyPlayers.clear();
@@ -72,13 +79,24 @@ public class GameService {
     public static void startGame() {
         readyPlayers.clear();
         VoteService.resetVotes();
-        ChatService.broadcastAll("===== All Players connected! Game is starting! =====");
+
+        for (ClientHandler client : ChatService.getClients()) {
+            client.resetMessageCount();
+        }
+
+        ChatService.broadcastAll(
+                "\n"
+                        + UIService.thickDivider() + "\n"
+                        + "All players connected. Game is starting!\n"
+                        + UIService.thickDivider() + "\n"
+                        + "\n"
+                        + UIService.tip("Winners get +30 pts") + "\n"
+                        + UIService.tip("Losers get -20 pts") + "\n"
+                        + UIService.divider());
 
         assignRoles();
         currentPhase = GamePhase.CHAT;
-        ChatService.broadcastAll(
-                "===== CHAT PHASE: Give clues about your word! Type 'vote' when you know who the imposter is! =====");
-
+        ChatService.broadcastAll(UIService.chatPhase());
     }
 
     /**
@@ -90,7 +108,7 @@ public class GameService {
         List<WordPair> wordBank = FileService.loadWordbank("data/words.json");
 
         if (wordBank.isEmpty()) {
-            ChatService.broadcastAll("Error: Word bank is empty!!");
+            ChatService.broadcastAll(UIService.error("Word bank is empty!"));
             return;
         }
 
@@ -98,17 +116,14 @@ public class GameService {
         WordPair selectedPair = wordBank.get(random.nextInt(wordBank.size()));
         int imposterIndex = random.nextInt(players.size());
 
-        // Assign Roles and Words/Hints
         for (int i = 0; i < players.size(); i++) {
             Player oldPlayer = players.get(i);
             String username = oldPlayer.getUsername();
 
             if (i == imposterIndex) {
-                // The Imposter gets the category hint stored as their "word"
                 ImposterPlayer imposter = new ImposterPlayer(username, selectedPair.getHint());
                 players.set(i, imposter);
             } else {
-                // Citizens get the actual secret word
                 CitizenPlayer citizen = new CitizenPlayer(username, selectedPair.getReal());
                 players.set(i, citizen);
             }
@@ -118,8 +133,6 @@ public class GameService {
 
         synchronized (ChatService.getClients()) {
             for (ClientHandler client : ChatService.getClients()) {
-
-                // Sync ClientHandler's player reference to the new subclass instance
                 for (Player updatedPlayer : players) {
                     if (updatedPlayer.getUsername().equals(client.getPlayer().getUsername())) {
                         client.setPlayer(updatedPlayer);
@@ -127,16 +140,10 @@ public class GameService {
                     }
                 }
 
-                // Check if this specific connection belongs to the Imposter or a Citizen
                 if (client.getPlayer() instanceof ImposterPlayer) {
-                    client.sendMessage("----- YOU ARE THE IMPOSTER! -----");
-                    client.sendMessage(
-                            "You don't know the word! Your word hint is: " + client.getPlayer().getWord());
-                    client.sendMessage("Blend in! Try to figure out the real word from others' clues.");
+                    client.sendMessage(UIService.imposterRole(client.getPlayer().getWord()));
                 } else {
-                    client.sendMessage("----- YOU ARE A CITIZEN! -----");
-                    client.sendMessage("Your secret word is: " + client.getPlayer().getWord());
-                    client.sendMessage("Give clever clues to find out who doesn't know the word!");
+                    client.sendMessage(UIService.citizenRole(client.getPlayer().getWord()));
                 }
             }
         }
@@ -144,14 +151,11 @@ public class GameService {
 
     /**
      * Determines the winner after voting ends.
-     * Updates leaderboard points and starts
-     * the play-again phase.
+     * Updates leaderboard points and starts the play-again phase.
      *
      * @param eliminated : the player eliminated during voting
      */
     public static void checkWinCondition(Player eliminated) {
-        ChatService.broadcastAll("**** " + eliminated.getUsername() + " has been eliminated!! ****");
-
         Player imposter = null;
         for (Player p : players) {
             if (p.getRole().equals("Imposter")) {
@@ -161,61 +165,45 @@ public class GameService {
         }
 
         String imposterName = imposter != null ? imposter.getUsername() : "unknown";
-        ChatService.broadcastAll("**** The Imposter was: " + imposterName + "!! ****");
-        ChatService.broadcastAll("**** The real word was: " + currentWordPair.getReal() + "!! ****");
+        String winner;
 
         if (eliminated.getRole().equals("Imposter")) {
-            ChatService.broadcastAll("**** CITIZENS WIN!! ****");
-
+            winner = "CITIZENS WIN!";
             for (Player p : players) {
-
-                if (p.getRole()
-                        .equals("Citizen")) {
-
-                    LeaderboardService.updatePoints(p.getUsername(), 20);
-
+                if (p.getRole().equals("Citizen")) {
+                    LeaderboardService.updatePoints(p.getUsername(), 30);
                 } else {
-
-                    LeaderboardService.updatePoints(p.getUsername(), -10);
+                    LeaderboardService.updatePoints(p.getUsername(), -20);
                 }
             }
         } else {
-            ChatService.broadcastAll("**** IMPOSTER WINS!! ****");
-
+            winner = "IMPOSTER WINS!";
             for (Player p : players) {
-
-                if (p.getRole()
-                        .equals("Imposter")) {
-
-                    LeaderboardService.updatePoints(
-                            p.getUsername(),
-                            20);
-
+                if (p.getRole().equals("Imposter")) {
+                    LeaderboardService.updatePoints(p.getUsername(), 30);
                 } else {
-
-                    LeaderboardService.updatePoints(
-                            p.getUsername(),
-                            -10);
+                    LeaderboardService.updatePoints(p.getUsername(), -20);
                 }
             }
-
         }
+
+        ChatService.broadcastAll(
+                UIService.gameResults(
+                        eliminated.getUsername(),
+                        imposterName,
+                        currentWordPair.getReal(),
+                        winner));
 
         currentPhase = GamePhase.RESULTS;
         handlePlayAgain();
-
     }
 
     /**
      * Starts the play-again voting phase.
-     * Players must answer yes or no.
      */
     public static void handlePlayAgain() {
-
         currentPhase = GamePhase.PLAY_AGAIN;
-
-        ChatService.broadcastAll(
-                "Play again? Type 'yes' or 'no':");
+        ChatService.broadcastAll(UIService.playAgain());
     }
 
     public static void addPlayer(Player player) {

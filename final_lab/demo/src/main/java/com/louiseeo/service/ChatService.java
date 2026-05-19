@@ -3,7 +3,6 @@ package com.louiseeo.service;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import com.louiseeo.ClientHandler;
 
 /**
@@ -13,8 +12,9 @@ import com.louiseeo.ClientHandler;
  * @author louiseeo
  */
 public class ChatService {
-    // For networking layer
-    private static final List<ClientHandler> clients = Collections.synchronizedList(new ArrayList<>());
+
+    private static final List<ClientHandler> clients =
+            Collections.synchronizedList(new ArrayList<>());
 
     public static List<ClientHandler> getClients() {
         return clients;
@@ -53,6 +53,11 @@ public class ChatService {
      */
     public static void addClient(ClientHandler handler) {
         clients.add(handler);
-        broadcastAll(handler.getPlayer().getUsername() + " joined! Type 'ready' when you want to start!");
+        ChatService.broadcastAll(
+            "\n"
+            + UIService.system(handler.getPlayer().getUsername() + " joined the lobby.") + "\n"
+            + UIService.tip("Type 'ready' to start.") + "\n"
+            + UIService.divider()
+        );
     }
 }

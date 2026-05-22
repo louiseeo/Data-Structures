@@ -1320,3 +1320,479 @@ Choice: 4
 [6] Leaderboard
 [0] Back
 
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 1
+
+=========================
+Welcome to EFM Grocery!
+Input product name: chippy
+Price: 23.0
+Quantity: 2.0
+Total: 46.0
+Another product Y/N? n
+Bill: 46.0
+Payment: 345.0
+Change: 299.0
+Thank you for shopping!
+
+Another customer Y/N? n
+Grocery program is terminating...
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 2
+
+Registration
+1. DVD
+2. VCD
+3. Tape
+Choice: 1
+Type: DVD
+Input title: tyr
+
+1. Horror
+2. Scifi
+3. Drama
+4. Comedy
+5. Cartoons
+Category: 1
+Minutes: 2342
+Setting: gter
+
+1. Rental
+2. Sales
+Transaction: 1
+Price: 234
+Register another? (Y/N) n
+
+REPORTS
+For rent: 1
+For sale: 0
+VCD Total: 0
+DVD Total: 1
+Tape Total: 0
+Horror Movies: 1
+Scifi Movies: 0
+Drama Movies: 0
+Comedy Movies: 0
+Catoons: 0
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 3
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Invalid input! Enter another.
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 1
+
+=========================
+Welcome to EFM Grocery!
+Input product name: c2
+Price: 12.0
+Quantity: 1.0
+Total: 12.0
+Another product Y/N? n
+Bill: 12.0
+Payment: 20.0
+Change: 8.0
+Thank you for shopping!
+
+Another customer Y/N? n
+Grocery program is terminating...
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 234
+Invalid choice! Pick another one.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 3
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Choice: 34
+Invalid input! Enter a valid choice.
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Invalid input! Enter another.
+
+===================================
+Welcome to Movie Registration Menu!
+[1] Add
+[2] Search
+[3] Edit
+[4] Delete
+[5] Sort
+[6] List
+[0] Exit
+
+Invalid input! Enter another.
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 1
+
+=========================
+Welcome to EFM Grocery!
+Input product name: 3w
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 1
+
+=========================
+Welcome to EFM Grocery!
+Input product name: fd
+Price: 342.0
+Quantity: 234.0
+Total: 80028.0
+Another product Y/N? n
+Bill: 80028.0
+Payment: 2.3423424E7
+Change: 2.3343396E7
+Thank you for shopping!
+
+Another customer Y/N? n
+Grocery program is terminating...
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Invalid input! Enter another.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 242423
+Invalid choice! Pick another one.
+
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit
+Choice: 4
+
+=============== WELCOME TO QUIZZER GAME ================
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: weq
+Invalid choice! Try again.
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 123
+Invalid choice! Try again.
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 3
+
+---------- PLAYER LIST ----------
+[1] Sonya
+[2] Emi
+[3] Love
+[4] FLoyd
+[5] Panying
+Enter player number: 0
+
+-------------------------------------
+Question # 1 | Answered: 0/21
+What is the national flower of the Philippines?
+[1] Answer  [2] Back  [3] Next  [4] Exit
+Choice: 4
+
+========== QUIZ OVER ==========
+Player: Sonya
+Final Score: 0/21
+--------------------------------
+Q1: Not answered - What is the national flower of the Philippines?
+Q2: Not answered - What year did the Philippines gain independence from the US?
+Q3: Not answered - What is the process of removing an element from a stack?
+Q4: Not answered - What does LIFO stand for?
+Q5: Not answered - What is the process of adding an element to a stack?
+Q6: Not answered - What is the powerhouse of the cell?
+Q7: Not answered - Who wrote the Philippine national anthem?
+Q8: Not answered - How many sides does a hexagon have?
+Q9: Not answered - What is the process of removing an element from a queue?
+Q10: Not answered - What do you call the front element of a queue?
+Q11: Not answered - What data structure is used in recursion?
+Q12: Not answered - What is 100 divided by 4?
+Q13: Not answered - What gas do plants absorb from the atmosphere?
+Q14: Not answered - What planet is closest to the sun?
+Q15: Not answered - What is the largest ocean in the world?
+Q16: Not answered - What color is the sky on a clear day?
+Q17: Not answered - What is 15% of 200?
+Q18: Not answered - What is 1 + 1?
+Q19: Not answered - What is 5 x 5?
+Q20: Not answered - What is an empty stack condition called?
+Q21: Not answered - What is the square root of 144?
+================================
+Score saved!
+
+------- MAIN MENU -------
+[1] Player Registration
+[2] Question Bank
+[3] Play Game
+[4] Exit
+
+Choice: 4
+
+Saving data and exiting... Goodbye!
+
+====================================
+Welcome to EFM Enterprise Systems
+We've got it all for you!
+
+Please choose one of the following:
+1. EFM Grocery ShopperMart POS
+2. EFM Movie Rental Registration
+3. EFM Movie Registration
+4. EFM Quizzer Game
+0. Exit

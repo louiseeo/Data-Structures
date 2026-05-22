@@ -59,7 +59,6 @@ public class QuizzerGame {
             }
         }
 
-        sc.close();
     }
 
     public static void playerMenu() {

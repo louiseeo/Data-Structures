@@ -18,9 +18,7 @@ public class MainMenu {
                     1. EFM Grocery ShopperMart POS
                     2. EFM Movie Rental Registration
                     3. EFM Movie Registration
-                    4. EFM Stack Quiz
-                    5. EFM Quiz Bee
-                    6. EFM Quizzer Game
+                    4. EFM Quizzer Game
                     0. Exit""");
 
             System.out.print("Choice: ");
@@ -29,8 +27,7 @@ public class MainMenu {
                 sc.nextLine();
                 continue;
             }
-            choice = sc.nextInt();
-            sc.nextLine();
+            choice = Integer.parseInt(sc.nextLine());
 
             FileLogger.logAnswer("Choice: " + choice); // log user input
 
@@ -45,12 +42,6 @@ public class MainMenu {
                     MovieMenu_OwnRegistration.main(args);
                     break;
                 case 4:
-                    StackQuiz.main(args);
-                    break;
-                case 5:
-                    QuizBeeMenu.main(args);
-                    break;
-                case 6:
                     QuizzerGame.main(args);
                     break;
                 case 0:
